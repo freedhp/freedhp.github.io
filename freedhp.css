@@ -298,10 +298,9 @@ footer{
     height: 0;
     overflow: hidden;
     opacity: 0;
-    word-break: keep-all;
 }
-#content_top, #content_movie{
-    word-break: break-all;
+#content_19th, #content_20th{
+    word-break: keep-all;
 }
 
   /* アクティブなタブ */
