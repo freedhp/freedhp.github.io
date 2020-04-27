@@ -194,17 +194,32 @@ img {
 	float:right;
 }
 
-.stages{
+.annualevent{
 	font-family:"ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
-
 }
 
-.stages li{
+.annualevent li{
 	list-style-type: none;
 	border-bottom:1px dashed #66b9bf;
 }
 
-.stages p{
+.annualevent p{
+	font-size:15px;
+	font-style:normal;
+	line-height:100%;
+}
+
+.stageinfo{
+	font-family:"ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+
+}
+
+.stageinfo li{
+	list-style-type: none;
+	border-bottom:1px dashed #66b9bf;
+}
+
+.stageinfo p{
 	font-size:15px;
 	font-style:normal;
 	line-height:100%;
