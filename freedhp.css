@@ -300,6 +300,9 @@ footer{
     opacity: 0;
     word-break: break-all;
 }
+details{
+    word-break: break-all;
+}
 #content_19th, #content_20th{
     word-break: keep-all;
 }
