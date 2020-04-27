@@ -1,0 +1,652 @@
+@charset "UTF-8";
+
+/*padding,borderを含めたサイズで計算*/
+*{
+    box-sizing:border-box
+}
+
+body{
+    width : 100%;
+    margin: 0;
+    color : #4b4b4b;
+    background-color: #ffeee6;
+    font-size:15px;
+}
+
+a{/*リンクされた文字*/
+    color:#07889b;
+    font-style:normal;
+    text-decoration:none;
+}
+a:link {/*未訪問のリンク*/
+    color:#07889b;
+    font-style:normal;
+    text-decoration:none;
+}
+a:visited {/*訪問後のリンク*/
+    color:#07889b;
+    text-decoration:none;
+}
+a:hover {/*マウスをのせたとき*/
+    color:#66b9bf;
+    font-style:normal;
+    text-decoration:none;
+}
+a:active {/*クリック中*/
+    text-decoration:none;
+}
+
+/*詳細等のボタンリンク色に*/
+summary{
+    color: #07889b;
+    outline: none;
+}
+
+summary:hover{
+    color: #66b9bf;
+}
+
+h1{
+    font-size:20px;
+    font-style:normal;
+    line-height: 100%;
+}
+
+/*水平線（点線）*/
+hr {
+    width: 100%;
+    height: 1px;
+    border: 0;
+    border-top: 1px dashed #66b9bf;
+}
+
+/*title画像のしたの水平線（斜線）*/
+hr.hr_title{
+    height: 10px;
+    opacity: 60%;
+    background: -webkit-repeating-linear-gradient(-45deg, #07889b, #07889b 4px,#66b9bf 4px, #66b9bf 8px);
+    background: repeating-linear-gradient(-45deg, #07889b, #07889b 4px, #66b9bf 4px, #66b9bf 8px);
+    border: none;
+    position: relative;
+    top: -5px;
+    width: inherit;
+    border-radius: 10px;
+}
+
+ul {
+    list-style-type: none;
+    padding-left:0px;
+}
+
+img {
+    border: none;
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+}
+
+/*ヘッダーの設定*/
+header {
+	position: fixed;	/*固定表示*/
+    left: 0px;
+    top: 0px;
+	z-index: 99;
+	width: 100%;		/*幅*/
+	height: 80px;		/*高さ*/
+	background:rgba(255,255,255,0.8);	/*背景色*/
+}
+
+/*FreeDロゴ*/
+header #logo img {
+	width: 190px;	/*画像の幅*/
+	position: absolute;
+	left: 3%;		/*ヘッダーブロックに対して左から3%の場所に配置*/
+	bottom: 0px;	/*ヘッダーブロックに対して下から0pxの場所に配置*/
+}
+
+/*SNSアイコン*/
+header .icon {
+	position: absolute;
+	right: 3%;
+	bottom: 10px;
+}
+/*アイコン１個あたりの設定*/
+header .icon li {
+	display: inline;	/*横並びにさせる指定*/
+}
+/*アイコン画像の設定*/
+header .icon img {
+	width: 30px;
+	margin-left: 10px;
+}
+
+/*メニューデスクトップ版*/
+#menubar {
+    overflow: hidden;
+    clear: both;
+	position: absolute;
+	left: calc(3% + 190px);	/*FreeDロゴのすぐ右に配置*/
+    bottom: 10px;
+    height: 60px;
+}
+/*メニュー１個あたりの設定*/
+#menubar li {
+	overflow: hidden;
+	float: left;		/*左に回り込み*/
+	text-align: center;	/*文字をセンタリング*/
+	padding: 0px 10px;	/*上下、左右へのメニュー内の余白*/
+}
+#menubar li a {
+    display:  block;
+    text-decoration: none;
+    padding-top: 3px;	/*下のブロックの「border-bottom」と「bottom」の数字と合わせる。*/
+    color: #4b4b4b;
+}
+#menubar li a:hover{
+    color : #e37222;
+}
+
+/*下線のアニメーション設定*/
+#menubar li::after {
+	transition: 0.3s;	/*0.3秒かけてアニメーションを実行する。*/
+	content: "";
+	display: block;
+    border-bottom: 3px solid #66b9bf;	/*下線の幅、線種、色。上のブロックの「padding-top」と、下の行の「bottom」の数字と合わせる。*/
+    position: relative;
+    left: 0px;
+    bottom: -3px;	/*bottomの数字は上のブロックの「padding-top」と、上の行の「border-bottom」の数字と合わせる。※マイナス記号は残したまま。*/
+}
+/*マウスオン時、現在表示中(current)、共通設定*/
+#menubar li:hover::after,#menubar li.current::after {
+    bottom: 0px;
+}
+
+/*menubarの間の縦線*/
+#menubar li {
+    border-left: 1px solid #bbb;
+    border-right: 1px solid #bbb;
+}
+#menubar li+ li {
+    border-left: 0;
+    border-right: 1px solid #bbb;
+}
+
+/*main*/
+.main {
+    position: relative;
+    top:100px;
+    margin: 0px auto;
+    padding :0px;
+    width : 100%;
+    height: auto;
+    overflow : hidden;
+}
+
+/*top画像*/
+.topimage {
+    position: relative;
+    width : 80%;
+    top: 0px;
+    margin: 0 auto;
+    user-select: none; /* CSS3 */
+    -moz-user-select: none; /* Firefox */
+    -webkit-user-select: none; /* Safari、Chromeなど */
+    -ms-user-select: none; /* IE10から */
+    pointer-events: none;
+}
+.topimage img{
+    border-radius: 30px; /*角を丸く*/
+}
+
+/*title画像*/
+.titleimage{
+    width: auto;
+    display: inline-block;
+}
+.titleimage img{
+    height:50px;
+    margin:10px 0px;
+    margin-right:30px;
+    user-select: none; /* CSS3 */
+    -moz-user-select: none; /* Firefox */
+    -webkit-user-select: none; /* Safari、Chromeなど */
+    -ms-user-select: none; /* IE10から */
+    pointer-events: none;
+}
+
+.boxes {
+    margin: 10px auto;
+    margin-bottom: 40px;
+	padding:15px 0px;
+	width: 80%;
+	height: auto;
+    position:relative;
+    overflow: hidden;
+}
+
+.box {
+	background-color:rgba(255,255,255,0.7);
+	margin: 0px auto;
+	padding:15px;
+	width: 65%;
+	height: auto;
+    float: left;
+    border-radius: 10px;
+}
+
+.tweetbox {
+    float: right;
+	width: 30%;
+    margin: 0px auto;
+}
+
+.contentbox {
+	background-color:rgba(255,255,255,0.7);
+	margin: 0px auto;
+	padding:15px;
+	width: 100%;
+	height: 100%;
+    border-radius: 10px;
+    position:relative;
+    overflow: hidden;
+}
+
+/*footerをページ最下部に固定*/
+footer{
+    text-align : center;
+    margin : 10px 0;
+    padding : 0px;
+    clear : both;
+    width : 100%;
+    position: absolute;/*絶対位置*/
+    bottom: 0; /*下に固定*/
+}
+
+/*タブの設定*/
+.tab-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    margin:20px 0;
+}
+.tab-wrap:after {
+    content: '';
+    width: 100%;
+    height: 3px;
+    background: #07889b;
+    display: block;
+    order: -1;
+}
+.tab-label {
+    color: White;
+    background: LightGray;
+    white-space: nowrap;
+    text-align: center;
+    padding: 10px .5em;
+    order: -1;
+    position: relative;
+    z-index: 1;
+    cursor: pointer;
+    border-radius: 5px 5px 0 0;
+    flex: 1;
+}
+.tab-label:not(:last-of-type){
+    margin-right: 5px;
+}
+
+.tab-content {
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+    opacity: 0;
+    word-break: keep-all;
+}
+#content_top, #content_movie{
+    word-break: break-all;
+}
+
+  /* アクティブなタブ */
+.tab-switch:checked+.tab-label {
+    background: #66b9bf;
+}
+.tab-switch:checked+.tab-label+.tab-content {
+    height: auto;
+    overflow: auto;
+    padding: 15px;
+    opacity: 1;
+    transition: .5s opacity;
+    box-shadow: 0 0 3px rgba(0,0,0,.2);
+}
+  /* ラジオボタン非表示 */
+.tab-switch {
+    display: none;
+}
+
+.text {
+	font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+	font-size: 15px;
+	font-style: normal;
+	padding-left: 0em;
+    line-height: 120%;
+	position: inherit;
+    float: left;
+    width: 100%;
+}
+
+.mouseovercomment{
+	z-index:3;
+	position:absolute;
+	color:#000000;
+	background-color:#ffffff;
+	filter:alpha(opacity=85);
+	opacity:0.85;
+	margin-top:1.7em;
+	margin-left:-5em;
+	padding: 0em 0.5em;
+	text-indent:0em;
+}
+
+.close{
+	position:relative;
+	float:right;
+}
+
+/*aboutページ*/
+.eventtable td{
+	border:1px solid #4b4b4b;
+	text-align: center;
+}
+.eventtable table{
+  border-collapse:collapse;
+}
+.question{
+	font-weight: bold;
+}
+
+/*memberページ*/
+.phototext {
+	font-family:  "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+	font-size: 15px;
+	font-style: normal;
+	text-indent: 0em;
+	padding-left: 0em;
+	line-height:200%;
+}
+
+/*eventページ*/
+/*年間イベントタブ*/
+.annualevent{
+	font-family:"ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+}
+.annualevent li{
+	list-style-type: none;
+	border-bottom:1px dashed #66b9bf;
+}
+.annualevent p{
+	font-size:15px;
+	font-style:normal;
+	line-height:100%;
+}
+
+/*ステージ情報タブ*/
+.stageinfo{
+	font-family:"ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+}
+.stageinfo li{
+	list-style-type: none;
+	border-bottom:1px dashed #66b9bf;
+}
+.stageinfo p{
+	font-size:15px;
+	font-style:normal;
+	line-height:100%;
+}
+.date_indent{
+    display: inline-block;
+    width:3em;
+}
+/*eventの詳細をインデント*/
+.detail{
+    margin-left:2em;
+    margin-top:1em;
+}
+
+/*ムービーページ*/
+/*ジャンル紹介動画タブ*/
+.genres{
+	font-family:"ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+}
+.genres li{
+	list-style-type: none;
+	border-bottom:1px dashed #66b9bf;
+	padding-bottom:20px;
+}
+.genres p{
+	font-size:15px;
+	font-style:normal;
+	line-height:120%;
+}
+
+/*最新公演の動画タブ*/
+.latest_movie li{
+	list-style-type: none;
+	border-bottom:1px dashed #66b9bf;
+	padding-bottom:20px;
+}
+
+/*photoページ*/
+.photos{
+	font-family:"ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+}
+.photos li{
+	list-style-type: none;
+	border-bottom:1px dashed #66b9bf;
+	padding-bottom:20px;
+}
+.photos p{
+	font-size:15px;
+	font-style:normal;
+	line-height:120%;
+}
+/*写真のイベント名を大きく*/
+summary.title{
+    font-size: 120%;
+}
+
+/*contactページ*/
+.sns_indent{
+    display: inline-block;
+    width:6em;
+}
+
+/*レスポンシブ対応*/
+/*ハンバーガーメニューを非表示*/
+#nav-drawer{
+    display:none;
+}
+
+/*youtubeの動画サイズをアスペクト比保ったまま縮小*/
+.iframe-responsive {
+    position: relative;
+    width: min(100%, 560px);
+    padding-top: min(calc(315 / 560 * 100%), 315px);
+}
+.iframe-responsive iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height:100%;
+}
+
+/*タブレット・スマートフォン版*/
+@media screen and (max-width:1023px){
+    /*twiterタイムラインを非表示*/
+    .tweetbox{
+        display:none;
+    }
+
+    /*boxの横幅を100%に*/
+    .box{
+        width:100%;
+    }
+
+    /*ハンバーガーメニューの設定*/
+    #nav-content ul{
+        margin-top:80px;
+        padding: 10px;
+        height:auto;
+    }
+
+    #nav-content li{
+        margin:0px 0px;
+        padding: 12px;
+        text-align: center;
+    }
+
+    #nav-drawer {
+        position: relative;
+        display:block;
+    }
+
+    /*チェックボックスは非表示に*/
+    .nav-unshown {
+        display:none;
+    }
+
+    /*ハンバーガーアイコンのスペース*/
+    #nav-open {
+        display: inline-block;
+        width: 25px;
+        height: 25px;
+        vertical-align: middle;
+        position: absolute;
+        right:10px;
+    }
+
+    /*ハンバーガーアイコンをCSSだけで表現*/
+    #nav-open span, #nav-open span:before, #nav-open span:after {
+        position: absolute;
+        height: 3px;/*線の太さ*/
+        width: 25px;/*長さ*/
+        border-radius: 3px;
+        background: #4b4b4b;
+        display: block;
+        content: '';
+        cursor: pointer;
+        z-index: 300; /*メニュー開いても表示されるように*/
+    }
+    #nav-open span:before {
+        right:0px;
+        bottom: -9px;
+    }
+    #nav-open span:after {
+        right: 0px;
+        bottom: -18px;
+    }
+
+    /*閉じる用の薄黒カバー*/
+    #nav-close {
+        display: none;/*はじめは隠しておく*/
+        position: fixed;
+        z-index: 10;
+        top: 0;/*全体に広がるように*/
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: black;
+        opacity: 0;
+        transition: all .3s;
+    }
+
+    /*メニュー中身*/
+    #nav-content {
+        overflow: auto;
+        position: fixed;
+        top: 0px;
+        right: 0;
+        z-index: 100;/*カバー背景より最前面に*/
+        width: 90%;/*左側に隙間を作る（閉じるカバーを表示）*/
+        max-width: 330px;/*最大幅*/
+        height: 100%;
+        background:	rgba(255,255,255,0.8);/*背景色*/
+        transition: .3s ease-in-out;/*滑らかに表示*/
+        -webkit-transform: translateX(-105%);
+        transform: translateX(100%);/*右に隠しておく*/
+    }
+
+    /*チェックが入ったら表示*/
+    #nav-input:checked ~ #nav-close {
+        display: block;/*カバーを表示*/
+        opacity: .5;
+    }
+    #nav-input:checked ~ #nav-content {
+        -webkit-transform: translateX(0%);
+        transform: translateX(0%);/*中身を表示（右へスライド）*/
+        box-shadow: 6px 0 25px rgba(0,0,0,.15);
+    }
+
+    /*横並びメニューを非表示*/
+    #menubar{
+          display:none;
+    }
+
+    /*Freedのロゴ画像調整*/
+    header #logo img {
+        width: 150px;
+        position: absolute;
+        left: 0px;
+        bottom: 10px;
+    }
+
+    /*SNSアイコン画像の調整*/
+    header .icon {
+        width: auro;
+        position: absolute;
+        right: 60px; /*ハンバーガーメニューの左に表示*/
+        bottom: 10px;
+    }
+    header .icon img {
+        width: 20px; /*アイコン画像小さく*/
+        margin-left: 0px; /*アイコンの間空けない*/
+    }
+
+    /*top画像*/
+    .topimage {
+        width : 100%;
+    }
+    .topimage img{
+        border-radius: 0px;
+    }
+
+    /*ボックスの幅100%に*/
+    .boxes{
+        width:100%;
+    }
+
+    /*ボックスの角丸くしない(幅100%に対応)*/
+    .box, .contentbox{
+        border-radius: 0;
+    }
+
+    /*title画像小さく*/
+    .titleimage img{
+        height:30px;
+    }
+
+    /*footerの文字小さく*/
+    footer{
+        font-size:10px;
+    }
+}
+
+/*写真ページの2カラムを1カラムに変更*/
+@media only screen and (max-width:700px){
+    .photos table{ 
+        margin: 0 -10px; 
+    }
+    .photos table th, .photos table td{
+    width: 100%;
+    display: block;
+    border-top: none;
+    }
+}

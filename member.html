@@ -1,0 +1,2010 @@
+<!DOCTYPE html>
+<head>
+<link rel="icon" href="./favicon.ico"/>
+<meta charset="UTF-8">
+<title>メンバー紹介 | ジャズダンスサークルFreeD</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script type="text/javascript" src="jQuery/samples/jquery-1.6.2.min.js"></script>
+<script type="text/javascript" src="jQuery/jquery.gpfloat-1.0.min.js"></script>
+
+        <!--メンバー紹介のボックスを出したりしまったりしゃべらせたりするjavaとcss-->
+        <script type="text/javascript" src="js/open.js"></script>
+        <script type="text/javascript" src="js/close.js"></script>
+        <style type="text/css">
+            .mouseovercomment{display:none;}
+        </style>
+        <noscript>
+        <style type="text/css">
+            .mouseovercomment{display:none;}
+        </style>
+        </noscript>
+
+
+        <link href="freedhp.css" rel="stylesheet" type="text/css" />
+    </head>
+
+    <body>
+
+        <header>
+            <h1 id="logo"><a href="index.html"><img src="images/logo.png" alt="FreeD"></a></h1>
+            <nav id="menubar">
+            <ul>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="member.html">MEMBER</a></li>
+                <li><a href="event.html">EVENT</a></li>
+                <li><a href="movie.html">MOVIE</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+                <li><a href="http://blog.livedoor.jp/dancefreed/" target="_blank" rel="noopener noreferrer">BLOG</a></li>
+            </ul>
+            </nav>
+            <ul class="icon">
+                <li><a href="https://www.facebook.com/jazzdancefreed" target="_blank" rel="noopener noreferrer"><img src="images/icon_facebook.png" alt="Facebook"></a></li>
+                <li><a href="https://twitter.com/dancefreed" target="_blank" rel="noopener noreferrer"><img src="images/icon_twitter.png" alt="Twitter"></a></li>
+                <li><a href="https://www.instagram.com/freed_ut_dance/" target="_blank" rel="noopener noreferrer"><img src="images/icon_instagram.png" alt="Instagram"></a></li>
+                <li><a href="https://www.youtube.com/user/jazzdancefreed" target="_blank" rel="nonopener nonreferrer"><img src="images/icon_youtube.png" alt="Youtube"></a></li>
+            </ul>
+
+            <div id="nav-drawer">
+                <input id="nav-input" type="checkbox" class="nav-unshown">
+                <label id="nav-open" for="nav-input"><span></span></label>
+                <label class="nav-unshown" id="nav-close" for="nav-input"></label>
+                <div id="nav-content">
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="about.html">ABOUT</a></li>
+                        <li><a href="member.html">MEMBER</a></li>
+                        <li><a href="event.html">EVENT</a></li>
+                        <li><a href="movie.html">MOVIE</a></li>
+                        <li><a href="contact.html">CONTACT</a></li>
+                        <li><a href="http://blog.livedoor.jp/dancefreed/" target="_blank" rel="noopener noreferrer">BLOG</a></li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+
+        <div class="main">
+            <div class="topimage">
+            </div>
+
+            <div class="boxes">
+                <div class="contentbox">
+                    <div class="titleimage">
+                        <img src="images/member.png">
+                        <hr class="hr_title" />
+                    </div>
+                    <div class ="tab-wrap">
+                            <input type="radio" name="tab" id="tab_top" class="tab-switch" checked><label for="tab_top" class="tab-label">19期執行</label>
+                            <div class="tab-content" id="content_top">
+                                <h1>19期執行より挨拶</h1>
+                                <img src="photo/member/19_enforcers.jpg" alt="photo1" width="560" style="width: 560px; "><div class="phototext"></div>
+                                <div>
+                                    <br>
+                                    こんにちは。<br>
+                                    19期執行のさえこ(部長・写真中)、だま(副部長・写真左)、べっきー(副部長・写真右)です。<br>
+                                    この度は東京大学ジャズダンスサークルFreeDの公式サイトにお越しくださいましてありがとうございます。<br>
+                                    私たちは東京大学をはじめとする様々な大学の学生総勢100名で構成されているインカレダンスサークルです。<br>
+                                    2020年度も、お互いを尊重し、心からダンスを楽しむ気持ちを大切に、日々サークル活動に励んで参ります。<br>
+                                    とてもアットホームで真剣なサークルです。<br>
+                                    今後の活動については随時HP・Twitter等で更新していきますので、興味のある方はぜひチェックしてみてください。<br>
+                                </div>
+                            </div>
+                            <input type="radio" name="tab" id="tab_19th" class="tab-switch"        ><label for="tab_19th" class="tab-label">19期</label>
+                            <div class="tab-content" id="content_19th">
+                                <h1>19期(幹部代)</h1>
+                                <img src="photo/member/19.jpg" alt="photo1" width="560" style="width: 560px; "><div class="phototext"></div>
+                                <br>
+                                <span onmouseover="open('さえこ')" onmouseout="close('さえこ')">
+                                部長 : さえこ
+                                </span>
+                                <span class="mouseovercomment" id="さえこ"></span>
+
+                                <br>
+
+                                <span onmouseover="open('だま')" onmouseout="close('だま')">
+                                副部長 : だま
+                                </span>
+                                <span class="mouseovercomment" id="だま"></span>
+
+                                <br>
+
+                                <span onmouseover="open('べっきー')" onmouseout="close('べっきー')">
+                                副部長 : べっきー
+                                </span>
+                                <span class="mouseovercomment" id="べっきー"></span>
+
+                                <br>
+
+                            <span OnMouseOver="open('あみ')" OnMouseOut="close('あみ')">
+                            あみ
+                            </span>
+                            <span class="mouseovercomment" ID="あみ"></span>
+
+                            <span OnMouseOver="open('えーみる')" OnMouseOut="close('えーみる')">
+                            えーみる
+                            </span>
+                            <span class="mouseovercomment" ID="えーみる"></span>
+
+                            <span onmouseover="open('えびび')" onmouseout="close('えびび')">
+                            えびび
+                            </span>
+                            <span class="mouseovercomment" id="えびび"></span>
+
+                            <span onmouseover="open('かいと')" onmouseout="close('かいと')">
+                            かいと
+                            </span>
+                            <span class="mouseovercomment" id="かいと"></span>
+
+                            <span onmouseover="open('こじかる')" onmouseout="close('こじかる')">
+                            こじかる
+                            </span>
+                            <span class="mouseovercomment" id="かるな"></span>
+
+                            <span onmouseover="open('しおん')" onmouseout="close('しおん')">
+                            しおん
+                            </span>
+                            <span class="mouseovercomment" id="しおん"></span>
+
+                            <span onmouseover="open('しずえ')" onmouseout="close('しずえ')">
+                            しずえ
+                            </span>
+                            <span class="mouseovercomment" id="しずえ"></span>
+
+                            <span onmouseover="open('じゅんな')" onmouseout="close('じゅんな')">
+                            じゅんな
+                            </span>
+                            <span class="mouseovercomment" id="じゅんな"></span>
+
+                            <span onmouseover="open('ずっきー')" onmouseout="close('ずっきー')">
+                            ずっきー
+                            </span>
+                            <span class="mouseovercomment" id="ずっきー"></span>
+
+                            <span onmouseover="open('せっきー')" onmouseout="close('せっきー')">
+                            せっきー
+                            </span>
+                            <span class="mouseovercomment" id="せっきー"></span>
+
+                            <span onmouseover="open('そうかい')" onmouseout="close('そうかい')">
+                            そうかい
+                            </span>
+                            <span class="mouseovercomment" id="そうかい"></span>
+
+                            <span onmouseover="open('たいせー')" onmouseout="close('たいせー')">
+                            たいせー
+                            </span>
+                            <span class="mouseovercomment" id="たいせー"></span>
+
+                            <span onmouseover="open('たかえ')" onmouseout="close('たかえ')">
+                            たかえ
+                            </span>
+                            <span class="mouseovercomment" id="たかえ"></span>
+
+                            <span onmouseover="open('たがりさ')" onmouseout="close('たがりさ')">
+                            たがりさ
+                            </span>
+                            <span class="mouseovercomment" id="たがりさ"></span>
+
+                            <span onmouseover="open('つのはる')" onmouseout="close('つのはる')">
+                            つのはる
+                            </span>
+                            <span class="mouseovercomment" id="つのはる"></span>
+
+                            <span onmouseover="open('なゆ')" onmouseout="close('なゆ')">
+                            なゆ
+                            </span>
+                            <span class="mouseovercomment" id="なゆ"></span>
+
+                            <span onmouseover="open('にしちゃん')" onmouseout="close('にしちゃん')">
+                            にしちゃん
+                            </span>
+                            <span class="mouseovercomment" id="にしちゃん"></span>
+
+                            <span onmouseover="open('パラ')" onmouseout="close('パラ')">
+                            パラ
+                            </span>
+                            <span class="mouseovercomment" id="パラ"></span>
+
+                            <span onmouseover="open('まりかず')" onmouseout="close('まりかず')">
+                            まりかず
+                            </span>
+                            <span class="mouseovercomment" id="まりかず"></span>
+
+                            <span onmouseover="open('みーちゃん')" onmouseout="close('みーちゃん')">
+                            みーちゃん
+                            </span>
+                            <span class="mouseovercomment" id="みーちゃん"></span>
+
+                            <span onmouseover="open('みき')" onmouseout="close('みき')">
+                            みき
+                            </span>
+                            <span class="mouseovercomment" id="みき"></span>
+
+                            <span onmouseover="open('ミキティ')" onmouseout="close('ミキティ')">
+                            ミキティ
+                            </span>
+                            <span class="mouseovercomment" id="ミキティ"></span>
+
+                            <span onmouseover="open('ゆうすけ')" onmouseout="close('ゆうすけ')">
+                            ゆうすけ
+                            </span>
+                            <span class="mouseovercomment" id="ゆうすけ"></span>
+
+                            <span onmouseover="open('ゆうな')" onmouseout="close('ゆうな')">
+                            ゆうな
+                            </span>
+                            <span class="mouseovercomment" id="ゆうな"></span>
+
+                            <span onmouseover="open('ゆうり')" onmouseout="close('ゆうり')">
+                            ゆうり
+                            </span>
+                            <span class="mouseovercomment" id="ゆうり"></span>
+
+                            <span onmouseover="open('ゆりか')" onmouseout="close('ゆりか')">
+                            ゆりか
+                            </span>
+                            <span class="mouseovercomment" id="ゆりか"></span>
+
+                            <span onmouseover="open('よしけん')" onmouseout="close('よしけん')">
+                            よしけん
+                            </span>
+                            <span class="mouseovercomment" id="よしけん"></span>
+
+                            <span onmouseover="open('りこぴん')" onmouseout="close('りこぴん')">
+                            りこぴん
+                            </span>
+                            <span class="mouseovercomment" id="りこぴん"></span>
+
+                            <span onmouseover="open('りさぴ')" onmouseout="close('りさぴ')">
+                            りさぴ
+                            </span>
+                            <span class="mouseovercomment" id="りさぴ"></span>
+
+                            <span onmouseover="open('れいな')" onmouseout="close('れいな')">
+                            れいな
+                            </span>
+                            <span class="mouseovercomment" id="れいな"></span>
+                            </div>
+                            <input type="radio" name="tab" id="tab_20th" class="tab-switch"       ><label for="tab_20th" class="tab-label">20期</label>
+                            <div class ="tab-content" id="content_20th">
+                                <h1>20期</h1>
+
+
+                            <img src="photo/member/20.jpg" alt="photo1" width="560" style="width: 560px; "><div class="phototext"></div>
+                            <br>
+                            <span OnMouseOver="open('ようた')" OnMouseOut="close('ようた')">
+                            ようた
+                            </span>
+                            <span class="mouseovercomment" ID="ようた"></span>
+
+                            <span OnMouseOver="open('まさや')" OnMouseOut="close('まさや')">
+                            まさや
+                            </span>
+                            <span class="mouseovercomment" ID="まさや"></span>
+
+                            <span OnMouseOver="open('ふぇい')" OnMouseOut="close('ふぇい')">
+                            ふぇい
+                            </span>
+                            <span class="mouseovercomment" ID="ふぇい"></span>
+
+                            <span onmouseover="open('かにに')" onmouseout="close('かにに')">
+                            かにに
+                            </span>
+                            <span class="mouseovercomment" id="かにに"></span>
+
+                            <span onmouseover="open('ほっしー')" onmouseout="close('ほっしー')">
+                            ほっしー
+                            </span>
+                            <span class="mouseovercomment" id="ほっしー"></span>
+
+                            <span onmouseover="open('たっつん')" onmouseout="close('たっつん')">
+                            たっつん
+                            </span>
+                            <span class="mouseovercomment" id="たっつん"></span>
+
+                            <span onmouseover="open('たーちゃん')" onmouseout="close('たーちゃん')">
+                            たーちゃん
+                            </span>
+                            <span class="mouseovercomment" id="たーちゃん"></span>
+
+                            <span onmouseover="open('みさき')" onmouseout="close('みさき')">
+                            みさき
+                            </span>
+                            <span class="mouseovercomment" id="みさき"></span>
+
+                            <span onmouseover="open('ときゆー')" onmouseout="close('ときゆー')">
+                            ときゆー
+                            </span>
+                            <span class="mouseovercomment" id="ときゆー"></span>
+
+                            <span onmouseover="open('しなか')" onmouseout="close('しなか')">
+                            しなか
+                            </span>
+                            <span class="mouseovercomment" id="しなか"></span>
+
+                            <span onmouseover="open('ゆみてぃん')" onmouseout="close('ゆみてぃん')">
+                            ゆみてぃん
+                            </span>
+                            <span class="mouseovercomment" id="ゆみてぃん"></span>
+
+                            <span onmouseover="open('あっちゃん')" onmouseout="close('あっちゃん')">
+                            あっちゃん
+                            </span>
+                            <span class="mouseovercomment" id="あっちゃん"></span>
+
+                            <span onmouseover="open('ゆいな')" onmouseout="close('ゆいな')">
+                            ゆいな
+                            </span>
+                            <span class="mouseovercomment" id="ゆいな"></span>
+
+                            <span onmouseover="open('まゆてぃー')" onmouseout="close('まゆてぃー')">
+                            まゆてぃー
+                            </span>
+                            <span class="mouseovercomment" id="まゆてぃー"></span>
+
+
+                            <span onmouseover="open('そい')" onmouseout="close('そい')">
+                            そい
+                            </span>
+                            <span class="mouseovercomment" id="そい"></span>
+
+
+
+                            <span onmouseover="open('こまゆ')" onmouseout="close('こまゆ')">
+                            こまゆ
+                            <span class="mouseovercomment" id="こまゆ"></span>
+
+
+                            <span onmouseover="open('さえ')" onmouseout="close('さえ')">
+                            さえ
+                            </span>
+                            <span class="mouseovercomment" id="さえ"></span>
+
+
+                            <span onmouseover="open('まり')" onmouseout="close('まり')">
+                            まり
+                            </span>
+                            <span class="mouseovercomment" id="まり"></span>
+
+                            <span onmouseover="open('ぽにょか')" onmouseout="close('ぽにょか')">
+                            ぽにょか
+                            </span>
+                            <span class="mouseovercomment" id="ぽにょか"></span>
+
+                            <span onmouseover="open('こっとん')" onmouseout="close('こっとん')">
+                            こっとん
+                            </span>
+                            <span class="mouseovercomment" id="こっとん"></span>
+
+                            <span onmouseover="open('ひな')" onmouseout="close('ひな')">
+                            ひな
+                            </span>
+                            <span class="mouseovercomment" id="ひな"></span>
+
+                            <span onmouseover="open('きょうこ')" onmouseout="close('きょうこ')">
+                            きょうこ
+                            </span>
+                            <span class="mouseovercomment" id="きょうこ"></span>
+
+                            <span onmouseover="open('ちさと')" onmouseout="close('ちさと')">
+                            ちさと
+                            </span>
+                            <span class="mouseovercomment" id="ちさと"></span>
+
+                            <span onmouseover="open('みゆ')" onmouseout="close('みゆ')">
+                            みゆ
+                            </span>
+                            <span class="mouseovercomment" id="みゆ"></span>
+
+                            <span onmouseover="open('きはる')" onmouseout="close('きはる')">
+                            きはる
+                            </span>
+                            <span class="mouseovercomment" id="きはる"></span>
+
+                            <span onmouseover="open('かなん')" onmouseout="close('かなん')">
+                            かなん
+                            </span>
+                            <span class="mouseovercomment" id="かなん"></span>
+
+                            <span onmouseover="open('がっきー')" onmouseout="close('がっきー')">
+                            がっきー
+                            </span>
+                            <span class="mouseovercomment" id="がっきー"></span>
+
+                            <span onmouseover="open('まほ')" onmouseout="close('まほ')">
+                            まほ
+                            </span>
+                            <span class="mouseovercomment" id="まほ"></span>
+
+                            <span onmouseover="open('ひめ')" onmouseout="close('ひめ')">
+                            ひめ
+                            </span>
+                            <span class="mouseovercomment" id="ひめ"></span>
+
+                            <span onmouseover="open('もーも')" onmouseout="close('もーも')">
+                            もーも
+                            </span>
+                            <span class="mouseovercomment" id="もーも"></span>
+
+                            <span onmouseover="open('あまね')" onmouseout="close('あまね')">
+                            あまね
+                            </span>
+                            <span class="mouseovercomment" id="あまね"></span>
+
+                            <span onmouseover="open('きーちゃん')" onmouseout="close('きーちゃん')">
+                            きーちゃん
+                            </span>
+                            <span class="mouseovercomment" id="きーちゃん"></span>
+
+                            <span onmouseover="open('しー')" onmouseout="close('しー')">
+                            しー
+                            </span>
+                            <span class="mouseovercomment" id="しー"></span>
+
+                            <span onmouseover="open('りこ')" onmouseout="close('りこ')">
+                            りこ
+                            </span>
+                            <span class="mouseovercomment" id="りこ"></span>
+
+                            <span onmouseover="open('みづき')" onmouseout="close('みづき')">
+                            みづき
+                            </span>
+                            <span class="mouseovercomment" id="みづき"></span>
+
+                            <span onmouseover="open('まいぺ')" onmouseout="close('まいぺ')">
+                            まいぺ
+                            </span>
+                            <span class="mouseovercomment" id="まいぺ"></span>
+
+                            <span onmouseover="open('ほのか')" onmouseout="close('ほのか')">
+                            ほのか
+                            </span>
+                            <span class="mouseovercomment" id="ほのか"></span>
+
+                            <span onmouseover="open('みさと')" onmouseout="close('みさと')">
+                            みさと
+                            </span>
+                            <span class="mouseovercomment" id="みさと"></span>
+
+                            <span onmouseover="open('しゃな')" onmouseout="close('しゃな')">
+                            しゃな
+                            </span>
+                            <span class="mouseovercomment" id="しゃな"></span>
+
+                            <span onmouseover="open('ひなこ')" onmouseout="close('ひなこ')">
+                            ひなこ
+                            </span>
+                            <span class="mouseovercomment" id="ひなこ"></span>
+
+                            </div>
+<!--
+
+                                          <ul>
+                                                  <h1>OBOG</h1>
+
+                                              <br><br><br>
+
+                                                  <li>
+                                                  <h1>18期</h1>
+                                                      <img src="photo/member/18.jpg" alt="photo1" width="560" style="width: 560px; "><div class="phototext"></div>
+                                                      <br>
+
+                                                      <span onmouseover="open('みなみ')" onmouseout="close('みなみ')">
+                                                      部長 : みなみ
+                                                      </span>
+                                                      <span class="mouseovercomment" id="みなみ"></span>
+
+                                                      <br>
+
+                                                      <span onmouseover="open('つばさ')" onmouseout="close('つばさ')">
+                                                      副部長 : つばさ
+                                                      </span>
+                                                      <span class="mouseovercomment" id="つばさ"></span>
+
+                                                      <br>
+
+                                                      <span onmouseover="open('りょうこ')" onmouseout="close('りょうこ')">
+                                                      副部長 : りょうこ
+                                                      </span>
+                                                      <span class="mouseovercomment" id="りょうこ"></span>
+
+                                                      <br>
+                                                  <span onmouseover="open('こうへい')" onmouseout="close('こうへい')">
+                                                  こうへい
+                                                  </span>
+                                                  <span class="mouseovercomment" id="こうへい"></span>
+
+                                                  <span onmouseover="open('まさ')" onmouseout="close('まさ')">
+                                                  まさ
+                                                  </span>
+                                                  <span class="mouseovercomment" id="まさ"></span>
+
+                                                  <span onmouseover="open('みね')" onmouseout="close('みね')">
+                                                  みね
+                                                  </span>
+                                                  <span class="mouseovercomment" id="みね"></span>
+
+                                                  <span onmouseover="open('ゆうき')" onmouseout="close('ゆうき')">
+                                                  ゆうき
+                                                  </span>
+                                                  <span class="mouseovercomment" id="ゆうき"></span>
+
+                                                  <span onmouseover="open('あべちゃん')" onmouseout="close('あべちゃん')">
+                                                  あべちゃん
+                                                  </span>
+                                                  <span class="mouseovercomment" id="あべちゃん"></span>
+
+
+                                                  <br>
+
+                                                  <span onmouseover="open('しお')" onmouseout="close('しお')">
+                                                  しお
+                                                  </span>
+                                                  <span class="mouseovercomment" id="しお"></span>
+
+
+                                                  <span onmouseover="open('えんどぅ')" onmouseout="close('えんどぅ')">
+                                                  えんどぅ
+                                                  </span>
+                                                  <span class="mouseovercomment" id="えんどぅ"></span>
+
+                                                  <span onmouseover="open('たーにー')" onmouseout="close('たーにー')">
+                                                  たーにー
+                                                  </span>
+                                                  <span class="mouseovercomment" id="たーにー"></span>
+
+
+
+                                                  <span onmouseover="open('りんちゃん')" onmouseout="close('りんちゃん')">
+                                                  りんちゃん
+                                                  </span>
+                                                  <span class="mouseovercomment" id="りんちゃん"></span>
+
+
+
+                                                  <span onmouseover="open('こもも')" onmouseout="close('こもも')">
+                                                  こもも
+                                                  </span>
+                                                  <span class="mouseovercomment" id="こもも"></span>
+
+
+                                                  <br>
+
+
+                                                  <span onmouseover="open('もえ')" onmouseout="close('もえ')">
+                                                  もえ
+                                                  </span>
+                                                  <span class="mouseovercomment" id="もえ"></span>
+
+
+
+                                                  <span onmouseover="open('ななこ')" onmouseout="close('ななこ')">
+                                                  ななこ
+                                                  </span>
+                                                  <span class="mouseovercomment" id="ななこ"></span>
+
+
+                                                  <span onmouseover="open('あよ')" onmouseout="close('あよ')">
+                                                  あよ
+                                                  </span>
+                                                  <span class="mouseovercomment" id="あよ"></span>
+
+                                                  <span onmouseover="open('あん')" onmouseout="close('あん')">
+                                                  あん
+                                                  </span>
+                                                  <span class="mouseovercomment" id="あん"></span>
+
+                                                  <span onmouseover="open('さゆ')" onmouseout="close('さゆ')">
+                                                  さゆ
+                                                  </span>
+                                                  <span class="mouseovercomment" id="さゆ"></span>
+
+                                                  <span onmouseover="open('めぐ')" onmouseout="close('めぐ')">
+                                                  めぐ
+                                                  </span>
+
+                                                  <span class="mouseovercomment" id="めぐ"></span>
+
+
+                                                  <span onmouseover="open('さのはる')" onmouseout="close('さのはる')">
+                                                  さのはる
+                                                  </span>
+                                                  <span class="mouseovercomment" id="さのはる"></span>
+
+
+
+                                                  <span onmouseover="open('くまちか')" onmouseout="close('くまちか')">
+                                                  くまちか
+                                                  </span>
+                                                  <span class="mouseovercomment" id="くまちか"></span>
+
+                                                  <br>
+
+                                                  <span onmouseover="open('みずりな')" onmouseout="close('みずりな')">
+                                                  みずりな
+                                                  </span>
+                                                  <span class="mouseovercomment" id="みずりな"></span>
+
+                                                  <span onmouseover="open('ののか')" onmouseout="close('ののか')">
+                                                  ののか
+                                                  </span>
+                                                  <span class="mouseovercomment" id="ののか"></span>
+
+
+
+                                                  <span onmouseover="open('どいちゃん')" onmouseout="close('どいちゃん')">
+                                                  どいちゃん
+                                                  </span>
+                                                  <span class="mouseovercomment" id="どいちゃん"></span>
+
+
+                                                  <span onmouseover="open('さき')" onmouseout="close('さき')">
+                                                  さき
+                                                  </span>
+                                                  <span class="mouseovercomment" id="さき"></span>
+
+
+                                                  <span onmouseover="open('ひらりー')" onmouseout="close('ひらりー')">
+                                                  ひらりー
+                                                  </span>
+                                                  <span class="mouseovercomment" id="ひらりー"></span>
+
+
+
+                                                  <span onmouseover="open('ゆゑ')" onmouseout="close('ゆゑ')">
+                                                  ゆゑ
+                                                  </span>
+                                                  <span class="mouseovercomment" id="ゆゑ"></span>
+
+
+                                                  <br>
+
+
+                                                  <span onmouseover="open('たくみ')" onmouseout="close('たくみ')">
+                                                  たくみ
+                                                  </span>
+                                                  <span class="mouseovercomment" id="たくみ"></span>
+
+
+                                                  <span onmouseover="open('まゆこ')" onmouseout="close('まゆこ')">
+                                                  まゆこ
+                                                  </span>
+                                                  <span class="mouseovercomment" id="まゆこ"></span>
+
+
+                                                  <span onmouseover="open('さつき')" onmouseout="close('さつき')">
+                                                  さつき
+                                                  </span>
+                                                  <span class="mouseovercomment" id="さつき"></span>
+
+
+                                                  <span onmouseover="open('ことの')" onmouseout="close('ことの')">
+                                                  ことの
+                                                  </span>
+                                                  <span class="mouseovercomment" id="ことの"></span>
+
+
+                                                  <span onmouseover="open('くっきー')" onmouseout="close('くっきー')">
+                                                  くっきー
+                                                  </span>
+                                                  <span class="mouseovercomment" id="くっきー"></span>
+
+
+                                                  <span onmouseover="open('みほ')" onmouseout="close('みほ')">
+                                                  みほ
+                                                  </span>
+                                                  <span class="mouseovercomment" id="みほ"></span>
+
+
+                                                  </li>
+
+                                                  <li>
+                                                    <p><details><summary>17期</summary>
+                                                        <div class="detail">
+                                                          <h1>17期</h1>
+                                                            <img src="photo/member/17.jpg" alt="photo1" width="560" style="width: 560px; "><div class="phototext"></div>
+
+                                                            <span OnMouseOver="open('かま')" OnMouseOut="close('かま')">
+                                                            部長：かま
+                                                            </span>
+                                                            <span class="mouseovercomment" ID="かま"></span>
+
+                                                            <br>
+
+                                                            <span OnMouseOver="open('まえちゃん')" OnMouseOut="close('まえちゃん')">
+                                                            副部長：まえちゃん
+                                                            </span>
+                                                            <span class="mouseovercomment" ID="くまえちゃん"></span>
+
+                                                            <br>
+
+                                                            <span OnMouseOver="open('ぐっちー')" OnMouseOut="close('ぐっちー')">
+                                                            副部長：ぐっちー
+                                                            </span>
+                                                            <span class="mouseovercomment" ID="ぐっちー"></span>
+
+
+                                                                <br>
+
+                                                            <span onmouseover="open('かず')" onmouseout="close('かず')">
+                                                            かず
+                                                            </span>
+                                                            <span class="mouseovercomment" id="かず"></span>
+
+                                                            <span onmouseover="open('まこすけ')" onmouseout="close('まこすけ')">
+                                                            まこすけ
+                                                            </span>
+                                                            <span class="mouseovercomment" id="まこすけ"></span>
+
+                                                            <span onmouseover="open('でふ')" onmouseout="close('でふ')">
+                                                            でふ
+                                                            </span>
+                                                            <span class="mouseovercomment" id="でふ"></span>
+
+                                                            <span onmouseover="open('かべ')" onmouseout="close('かべ')">
+                                                            かべ
+                                                            </span>
+                                                            <span class="mouseovercomment" id="かべ"></span>
+
+                                                            <span onmouseover="open('ブロッコリー')" onmouseout="close('ブロッコリー')">
+                                                            ブロッコリー
+                                                            </span>
+                                                            <span class="mouseovercomment" id="ブロッコリー"></span>
+
+                                                            <span onmouseover="open('たいすけ')" onmouseout="close('たいすけ')">
+                                                            たいすけ
+                                                            </span>
+                                                            <span class="mouseovercomment" id="たいすけ"></span>
+
+                                                            <span onmouseover="open('まとちゃん')" onmouseout="close('まとちゃん')">
+                                                            まとちゃん
+                                                            </span>
+                                                            <span class="mouseovercomment" id="まとちゃん"></span>
+
+                                                            <br>
+
+                                                            <span onmouseover="open('まゆか')" onmouseout="close('まゆか')">
+                                                            まゆか
+                                                            </span>
+                                                            <span class="mouseovercomment" id="まゆか"></span>
+
+                                                            <span onmouseover="open('くみこ')" onmouseout="close('くみこ')">
+                                                            くみこ
+                                                            </span>
+                                                            <span class="mouseovercomment" id="くみこ"></span>
+
+                                                            <span onmouseover="open('あかり')" onmouseout="close('あかり')">
+                                                            あかり
+                                                            </span>
+                                                            <span class="mouseovercomment" id="あかり"></span>
+
+                                                            <span onmouseover="open('さとあや')" onmouseout="close('さとあや')">
+                                                            さとあや
+                                                            </span>
+                                                            <span class="mouseovercomment" id="さとあや"></span>
+
+                                                            <span onmouseover="open('ざわ')" onmouseout="close('ざわ')">
+                                                            ざわ
+                                                            </span>
+                                                            <span class="mouseovercomment" id="ざわ"></span>
+
+                                                            <span onmouseover="open('しんちゃん')" onmouseout="close('しんちゃん')">
+                                                            しんちゃん
+                                                            </span>
+                                                            <span class="mouseovercomment" id="しんちゃん"></span>
+
+
+                                                            <span onmouseover="open('りさ')" onmouseout="close('りさ')">
+                                                            りさ
+                                                            </span>
+                                                            <span class="mouseovercomment" id="りさ"></span>
+
+                                                            <br>
+
+                                                            <span onmouseover="open('まい')" onmouseout="close('まい')">
+                                                            まい
+                                                            </span>
+                                                            <span class="mouseovercomment" id="まい"></span>
+
+
+                                                            <span onmouseover="open('ゆか')" onmouseout="close('ゆか')">
+                                                            ゆか
+                                                            </span>
+                                                            <span class="mouseovercomment" id="ゆか"></span>
+
+
+                                                            <span onmouseover="open('りえな')" onmouseout="close('りえな')">
+                                                            りえな
+                                                            </span>
+                                                            <span class="mouseovercomment" id="りえな"></span>
+
+                                                            <span onmouseover="open('なつき')" onmouseout="close('なつき')">
+                                                            なつき
+                                                            </span>
+                                                            <span class="mouseovercomment" id="なつき"></span>
+
+                                                            <span onmouseover="open('まえはる')" onmouseout="close('まえはる')">
+                                                            まえはる
+                                                            </span>
+                                                            <span class="mouseovercomment" id="まえはる"></span>
+
+                                                            <span onmouseover="open('あゆみ')" onmouseout="close('あゆみ')">
+                                                            あゆみ
+                                                            </span>
+                                                            <span class="mouseovercomment" id="あゆみ"></span>
+
+
+                                                            <span onmouseover="open('まゆ')" onmouseout="close('まゆ')">
+                                                            まゆ
+                                                            </span>
+
+                                                            <span class="mouseovercomment" id="まゆ"></span>
+
+                                                            <span onmouseover="open('まや')" onmouseout="close('まや')">
+                                                            まや
+                                                            </span>
+                                                            <span class="mouseovercomment" id="まや"></span>
+
+
+
+                                                            <span onmouseover="open('ゆう')" onmouseout="close('ゆう')">
+                                                            ゆう
+                                                            </span>
+                                                            <span class="mouseovercomment" id="ゆう"></span>
+
+                                                            <br>
+
+                                                            <span onmouseover="open('なべ')" onmouseout="close('なべ')">
+                                                            なべ
+                                                            </span>
+                                                            <span class="mouseovercomment" id="なべ"></span>
+
+                                                            <span onmouseover="open('あっこ')" onmouseout="close('あっこ')">
+                                                            あっこ
+                                                            </span>
+                                                            <span class="mouseovercomment" id="あっこ"></span>
+
+
+
+
+
+
+                                                            <span onmouseover="open('ばらちゃん')" onmouseout="close('ばらちゃん')">
+                                                            ばらちゃん
+                                                            </span>
+                                                            <span class="mouseovercomment" id="ばらちゃん"></span>
+
+
+                                                            <span onmouseover="open('ななみ')" onmouseout="close('ななみ')">
+                                                            ななみ
+                                                            </span>
+                                                            <span class="mouseovercomment" id="ななみ"></span>
+
+                                                            <span onmouseover="open('ちひろ')" onmouseout="close('ちひろ')">
+                                                            ちひろ
+                                                            </span>
+                                                            <span class="mouseovercomment" id="ちひろ"></span>
+
+                                                            <span onmouseover="open('くるみ')" onmouseout="close('くるみ')">
+                                                            くるみ
+                                                            </span>
+                                                            <span class="mouseovercomment" id="くるみ"></span>
+
+                                                            <span onmouseover="open('まりこ')" onmouseout="close('まりこ')">
+                                                            まりこ
+                                                            </span>
+                                                            <span class="mouseovercomment" id="まりこ"></span>
+
+
+                                                            <span onmouseover="open('たま')" onmouseout="close('たま')">
+                                                            たま
+                                                            </span>
+                                                            <span class="mouseovercomment" id="たま"></span>
+
+                                                            <br>
+
+                                                            <span onmouseover="open('えま')" onmouseout="close('えま')">
+                                                            えま
+                                                            </span>
+                                                            <span class="mouseovercomment" id="えま"></span>
+
+
+                                                            <span onmouseover="open('まき')" onmouseout="close('まき')">
+                                                            まき
+                                                            </span>
+                                                            <span class="mouseovercomment" id="まき"></span>
+                                                          </div>
+
+                                                      </details>
+                                                    </p>
+                                                  </li>
+
+                        
+                      　　　　　　　　　　　　　　<li>
+                                                  <h1>16期</h1>
+
+                                                  <img src="photo/member/16.jpg" alt="photo1" width="560" height="420" style="width: 560px; height: 420px;"><div class="phototext"></div>
+
+                                                  <br>
+
+                                              部長：<span onmouseover="open('りな')" onmouseout="close('りな')">りな</span>
+                                              <span class="mouseovercomment" id="りな">笑顔が素敵な店員さん</span>
+                                              <br>
+                                              副部長：<span onmouseover="open('もあい')" onmouseout="close('もあい')">もあい</span>
+                                              <span class="mouseovercomment" id="もあい">I'm a perfect moai.</span>
+                                              <br>
+                                              副部長：<span onmouseover="open('くめちゃん')" onmouseout="close('くめちゃん')">くめちゃん</span>
+                                              <span class="mouseovercomment" id="くめちゃん">粂って漢字があるらしい</span>
+                                              <br>
+                                              <span onmouseover="open('ゆうた')" onmouseout="close('ゆうた')">
+                                              ゆうた
+                                              </span>
+                                              <span class="mouseovercomment" id="ゆうた">FreeDのファン・ペルシー</span>
+
+                                              <span onmouseover="open('くのちゃん')" onmouseout="close('くのちゃん')">
+                                              くのちゃん
+                                              </span>
+                                              <span class="mouseovercomment" id="くのちゃん">実力派アイドル</span>
+
+                                              <span onmouseover="open('なっち')" onmouseout="close('なっち')">
+                                              なっち
+                                              </span>
+                                              <span class="mouseovercomment" id="なっち">Jとは違う富山から来たんだと思う</span>
+
+                                              <span onmouseover="open('J')" onmouseout="close('J')">
+                                              J
+                                              </span>
+                                              <span class="mouseovercomment" id="J">本郷おじさん</span>
+
+                                              <span onmouseover="open('ゆいゆい')" onmouseout="close('ゆいゆい')">
+                                              ゆいゆい
+                                              </span>
+                                              <span class="mouseovercomment" id="ゆいゆい">ゆいゆい姐さん</span>
+                                              <span onmouseover="open('とっぽ')" onmouseout="close('とっぽ')">
+                                              とっぽ
+                                              </span>
+                                              <span class="mouseovercomment" id="とっぽ">最後までチョコたっぷりTP</span>
+
+                                              <span onmouseover="open('みきお')" onmouseout="close('みきお')">
+                                              みきお
+                                              </span>
+                                              <span class="mouseovercomment" id="みきお">体幹がすごい</span>
+
+                                              <span onmouseover="open('ちょろこ')" onmouseout="close('ちょろこ')">
+                                              ちょろこ
+                                              </span>
+                                              <span class="mouseovercomment" id="ちょろこ">16期の最終兵器</span>
+
+                                              <br>
+
+                                              <span onmouseover="open('こーき')" onmouseout="close('こーき')">
+                                              こーき
+                                              </span>
+                                              <span class="mouseovercomment" id="こーき">メルボルン帰りの情報屋</span>
+
+                                              <span onmouseover="open('もも')" onmouseout="close('もも')">
+                                              もも
+                                              </span>
+                                              <span class="mouseovercomment" id="もも">赤毛の少女</span>
+
+                                              <span onmouseover="open('なつは')" onmouseout="close('なつは')">
+                                              なつは
+                                              </span>
+                                              <span class="mouseovercomment" id="なつは">なっつんごれらい</span>
+
+                                              <span onmouseover="open('あやこ')" onmouseout="close('あやこ')">
+                                              あやこ
+                                              </span>
+                                              <span class="mouseovercomment" id="あやこ">あやこんぬダンサー</span>
+
+                                              <span onmouseover="open('みつき')" onmouseout="close('みつき')">
+                                              みつき
+                                              </span>
+                                              <span class="mouseovercomment" id="みつき">ぽよんぬアルバイター</span>
+
+                                              <span onmouseover="open('りかこ')" onmouseout="close('りかこ')">
+                                              りかこ
+                                              </span>
+                                              <span class="mouseovercomment" id="りかこ">草食と見せかけて実は肉が好き</span>
+
+                                              <span onmouseover="open('くろち')" onmouseout="close('くろち')">
+                                              くろち
+                                              </span>
+                                              <span class="mouseovercomment" id="くろち">天然アイドル</span>
+
+                                              <span onmouseover="open('こめっち')" onmouseout="close('こめっち')">
+                                              こめっち
+                                              </span>
+                                              <span class="mouseovercomment" id="こめっち">Macをこよなく愛するR&Ber</span>
+
+                                              <span onmouseover="open('しげ')" onmouseout="close('しげ')">
+                                              しげ
+                                              </span>
+                                              <span class="mouseovercomment" id="しげ">しげさん？</span>
+
+                                              <br>
+
+                                              <span onmouseover="open('ここ')" onmouseout="close('ここ')">
+                                              ここ
+                                              </span>
+                                              <span class="mouseovercomment" id="ここ">練習中に名前言われた回数ナンバー１</span>
+
+
+                                              <span onmouseover="open('かずと')" onmouseout="close('かずと')">
+                                              かずてぃん
+                                              </span>
+                                              <span class="mouseovercomment" id="かずと">ミスター！</span>
+
+                                              <span onmouseover="open('はるか')" onmouseout="close('はるか')">
+                                              はるか
+                                              </span>
+                                              <span class="mouseovercomment" id="はるか">劇団員も兼任してます（ビシッ）</span>
+
+                                              <span onmouseover="open('りぃ')" onmouseout="close('りぃ')">
+                                              りぃ
+                                              </span>
+                                              <span class="mouseovercomment" id="りぃ">ハワイにテリヤキバーガーは売ってない！！</span>
+
+                                              <span onmouseover="open('あーちゃん')" onmouseout="close('あーちゃん')">
+                                              あーちゃん
+                                              </span>
+                                              <span class="mouseovercomment" id="あーちゃん">試される大阪弁</span>
+
+                                              <span onmouseover="open('ちぃ')" onmouseout="close('ちぃ')">
+                                              ちぃ
+                                              </span>
+                                              <span class="mouseovercomment" id="ちぃ">FreeDの大ファンです！</span>
+
+                                              <span onmouseover="open('なみ')" onmouseout="close('なみ')">
+                                              なみ
+                                              </span>
+                                              <span class="mouseovercomment" id="なみ">一番の闇だけど心は若く</span>
+
+
+
+                                              <span onmouseover="open('なほ')" onmouseout="close('なほ')">
+                                              なほ
+                                              </span>
+                                              <span class="mouseovercomment" id="なほ">パリピ！！</span>
+
+                                              <span onmouseover="open('まつり')" onmouseout="close('まつり')">
+                                              まつり
+                                              </span>
+                                              <span class="mouseovercomment" id="まつり">命名が得意</span>
+
+                                              <br>
+
+                                              <span onmouseover="open('とし')" onmouseout="close('とし')">
+                                              とし
+                                              </span>
+                                              <span class="mouseovercomment" id="とし">3男かつ4男</span>
+
+                                          </li>
+
+                                              <li>
+
+                                                  <h1>15期</h1>
+
+                                                      <img style="width: 560px; height: 420px;"
+                                                  src="photo/member/15.jpg" alt="photo1"><div class="phototext"></div><br>
+
+
+                                              <span OnMouseOver="open('さだはる')" OnMouseOut="close('さだはる')">
+                                              部長：さだ
+                                              </span>
+                                              <span class="mouseovercomment" ID="さだはる"></span>
+
+                                              <br>
+
+                                              <span OnMouseOver="open('くっすー')" OnMouseOut="close('くっすー')">
+                                              副部長：くっすー
+                                              </span>
+                                              <span class="mouseovercomment" ID="くっすー"></span>
+
+                                              <br>
+
+                                              <span OnMouseOver="open('はっち')" OnMouseOut="close('はっち')">
+                                              副部長：はっち
+                                              </span>
+                                              <span class="mouseovercomment" ID="はっち"></span>
+
+                                              <br>
+
+                                              <span OnMouseOver="open('さぎ')" OnMouseOut="close('さぎ')">
+                                              さぎ
+                                              </span>
+                                              <span class="mouseovercomment" ID="さぎ">(*^○^*)</span>
+
+
+                                              <span OnMouseOver="open('まさき')" OnMouseOut="close('まさき')">
+                                              まさき
+                                              </span>
+                                              <span class="mouseovercomment" ID="まさき">笑って〜♪</span>
+
+                                              <span OnMouseOver="open('すえ')" OnMouseOut="close('すえ')">
+                                              すえ
+                                              </span>
+                                              <span class="mouseovercomment" ID="すえ">ビクンビクンしてるね（アイソレが）</span>
+
+                                              <span OnMouseOver="open('けーぼー')" OnMouseOut="close('けーぼー')">
+                                              けーぼー
+                                              </span>
+                                              <span class="mouseovercomment" ID="けーぼー">あめおとこ２</span>
+
+                                              <span OnMouseOver="open('はなちゃん')" OnMouseOut="close('はなちゃん')">
+                                              はなちゃん
+                                              </span>
+                                              <span class="mouseovercomment" ID="はなちゃん">いつまでもお幸せに</span>
+
+                                              <span OnMouseOver="open('みずき')" OnMouseOut="close('みずき')">
+                                              みずき
+                                              </span>
+                                              <span class="mouseovercomment" ID="みずき">オアシスのオアシス</span>
+
+                                              <span OnMouseOver="open('なべあゆ')" OnMouseOut="close('なべあゆ')">
+                                              なべあゆ
+                                              </span>
+                                              <span class="mouseovercomment" ID="なべあゆ">スタバ♪</span>
+
+                                              <span OnMouseOver="open('ちぇうん')" OnMouseOut="close('ちぇうん')">
+                                              ちぇうん
+                                              </span>
+                                              <span class="mouseovercomment" ID="ちぇうん">イオ</span>
+
+                                              <br>
+
+                                              <span OnMouseOver="open('けい')" OnMouseOut="close('けい')">
+                                              けい
+                                              </span>
+                                              <span class="mouseovercomment" ID="けい">けいちゃん</span>
+
+                                              <span OnMouseOver="open('なつ')" OnMouseOut="close('なつ')">
+                                              なつ
+                                              </span>
+                                              <span class="mouseovercomment" ID="なつ">稲毛姐さん</span>
+
+                                              <span OnMouseOver="open('もちまゆ')" OnMouseOut="close('もちまゆ')">
+                                              もちまゆ
+                                              </span>
+
+                                              <span class="mouseovercomment" ID="もちまゆ">ふっかあつっ！</span>
+
+                                              <span OnMouseOver="open('えみ')" OnMouseOut="close('えみ')">
+                                              えみ
+                                              </span>
+                                              <span class="mouseovercomment" ID="えみ">ディズニープリンセス</span>
+
+                                              <span OnMouseOver="open('みく')" OnMouseOut="close('みく')">
+                                              みく
+                                              </span>
+                                              <span class="mouseovercomment" ID="みく"></span>
+
+                                              <span OnMouseOver="open('まーこ')" OnMouseOut="close('まーこ')">
+                                              まーこ
+                                              </span>
+                                              <span class="mouseovercomment" ID="まーこ">情報系</span>
+
+
+                                              <span OnMouseOver="open('ゆめ')" OnMouseOut="close('ゆめ')">
+                                              ゆめ
+                                              </span>
+                                              <span class="mouseovercomment" ID="ゆめ">準ミス！！</span>
+
+                                              <span OnMouseOver="open('かなこ')" OnMouseOut="close('かなこ')">
+                                              かなこ
+                                              </span>
+                                              <span class="mouseovercomment" ID="かなこ">もにこ</span>
+
+                                              <span OnMouseOver="open('もえぴ')" OnMouseOut="close('もえぴ')">
+                                              もえぴ
+                                              </span>
+                                              <span class="mouseovercomment" ID="もえぴ"></span>
+
+                                              <span OnMouseOver="open('さくら')" OnMouseOut="close('さくら')">
+                                              さくら
+                                              </span>
+                                              <span class="mouseovercomment" ID="さくら">い</span>
+
+                                              <span OnMouseOver="open('なかたま')" OnMouseOut="close('なかたま')">
+                                              なかたま
+                                              </span>
+                                              <span class="mouseovercomment" ID="なかたま">なかたま</span>
+
+                                              <span OnMouseOver="open('クリスティーナ')" OnMouseOut="close('クリスティーナ')">
+                                              クリスティーナ
+                                              </span>
+                                              <span class="mouseovercomment" ID="クリスティーナ"></span>
+
+                                              <span OnMouseOver="open('まり')" OnMouseOut="close('まり')">
+                                              まり
+                                              </span>
+                                              <span class="mouseovercomment" ID="まり">お幸せに！</span>
+
+                                              <span OnMouseOver="open('みほ')" OnMouseOut="close('みほ')">
+                                              みほ
+                                              </span>
+                                              <span class="mouseovercomment" ID="みほ">あーげさん（12期）</span>
+
+                                              <span OnMouseOver="open('あかね')" OnMouseOut="close('あかね')">
+                                              あかね
+                                              </span>
+                                              <span class="mouseovercomment" ID="あかね"></span>
+
+
+                                              <span OnMouseOver="open('まりな')" OnMouseOut="close('まりな')">
+                                              まりな
+                                              </span>
+                                              <span class="mouseovercomment" ID="まりな">１３０センチ</span>
+
+                                              <span OnMouseOver="open('ひなこ')" OnMouseOut="close('ひなこ')">
+                                              ひなこ
+                                              </span>
+                                              <span class="mouseovercomment" ID="ひなこ"></span>
+
+                                              <span OnMouseOver="open('ゆっきー')" OnMouseOut="close('ゆっきー')">
+                                              ゆき
+                                              </span>
+                                              <span class="mouseovercomment" ID="ゆっきー"></span>
+
+                                              <br>
+
+                                              <span OnMouseOver="open('よしめぐ')" OnMouseOut="close('よしめぐ')">
+                                              よしめぐ
+                                              </span>
+                                              <span class="mouseovercomment" ID="よしめぐ">実はまじめ...？</span>
+
+                                              <span OnMouseOver="open('ゆりの')" OnMouseOut="close('ゆりの')">
+                                              ゆりの
+                                              </span>
+                                              <span class="mouseovercomment" ID="ゆりの">あざとくないですぅ♡</span>
+
+                                              <span OnMouseOver="open('すぎゆか')" OnMouseOut="close('すぎゆか')">
+                                              すぎゆか
+                                              </span>
+                                              <span class="mouseovercomment" ID="すぎゆか"></span>
+
+                                              <span OnMouseOver="open('だみお')" OnMouseOut="close('だみお')">
+                                              だみお
+                                              </span>
+                                              <span class="mouseovercomment" ID="だみお"></span>
+
+                                              <span OnMouseOver="open('あやみ')" OnMouseOut="close('あやみ')">
+                                              あやみ
+                                              </span>
+                                              <span class="mouseovercomment" ID="あやみ">ネパール　オン　フット！</span>
+
+                                              <span OnMouseOver="open('さとみ')" OnMouseOut="close('さとみ')">
+                                              さとみ
+                                              </span>
+                                              <span class="mouseovercomment" ID="さとみ"></span>
+
+                                              <span OnMouseOver="open('みゆ')" OnMouseOut="close('みゆ')">
+                                              みゆ
+                                              </span>
+                                              <span class="mouseovercomment" ID="みゆ"></span>
+
+                                              <span OnMouseOver="open('ゆうな')" OnMouseOut="close('ゆうな')">
+                                              ゆうな
+                                              </span>
+                                              <span class="mouseovercomment" ID="ゆうな">テンションあ～げよ♡</span>
+
+                                              </li>
+
+                                              <li>
+                                                  <h1>14期</h1>
+
+                                                  <img style="width: 560px; height: 420px;"
+                                                  src="photo/member/14.jpg" alt="photo1"><div class="phototext"></div>
+                                                  <br>
+
+                                              <span OnMouseOver="open('みさ')" OnMouseOut="close('みさ')">
+                                              部長：みさ
+                                              </span>
+                                              <span class="mouseovercomment" ID="みさ">ぶちょん</span>
+
+                                              <br />
+                                              <span OnMouseOver="open('やおりな')" OnMouseOut="close('やおりな')">
+                                              副部長：やおりな
+                                              </span>
+                                              <span class="mouseovercomment" ID="やおりな">２男</span>
+                                              <br />
+                                              <span OnMouseOver="open('おざ')" OnMouseOut="close('おざ')">
+                                              副部長：おざ
+                                              </span>
+                                              <span class="mouseovercomment" ID="おざ">なかたま♡</span>
+                                              <br />
+
+                                              <span OnMouseOver="open('まみこ')" OnMouseOut="close('まみこ')">
+                                              まみこ
+                                              </span>
+                                              <span class="mouseovercomment" ID="まみこ">JG</span>
+
+                                              <span OnMouseOver="open('せーしん')" OnMouseOut="close('せーしん')">
+                                              せーしん
+                                              </span>
+                                              <span class="mouseovercomment" ID="せーしん">ツイ廃パンカー</span>
+
+                                              <span OnMouseOver="open('りこ')" OnMouseOut="close('りこ')">
+                                              りこ
+                                              </span>
+                                              <span class="mouseovercomment" ID="りこ">ちゃんりこ（１７才）</span>
+
+
+
+                                              <span OnMouseOver="open('もえ')" OnMouseOut="close('もえ')">
+                                              もえ
+                                              </span>
+                                              <span class="mouseovercomment" ID="もえ">女帝だったけど最近かわいい路線にジャンル変更！</span>
+
+                                              <span OnMouseOver="open('なおすけ')" OnMouseOut="close('なおすけ')">
+                                              なおすけ
+                                              </span>
+                                              <span class="mouseovercomment" ID="なおすけ">腕長すけ</span>
+
+                                              <span OnMouseOver="open('たかはる')" OnMouseOut="close('たかはる')">
+                                              たかはる
+                                              </span>
+                                              <span class="mouseovercomment" ID="たかはる">電波少女</span>
+
+                                              <span OnMouseOver="open('みくそん')" OnMouseOut="close('みくそん')">
+                                              みくそん
+                                              </span>
+                                              <span class="mouseovercomment" ID="みくそん">黒子ロボット</span>
+
+                                              <span OnMouseOver="open('なぐ')" OnMouseOut="close('なぐ')">
+                                              なぐ
+                                              </span>
+                                              <span class="mouseovercomment" ID="なぐ">建築に現れた女神</span>
+
+                                              <br>
+
+                                              <span OnMouseOver="open('もえり')" OnMouseOut="close('もえり')">
+                                              もえり
+                                              </span>
+                                              <span class="mouseovercomment" ID="もえり">「もえりさんのめちゃめちゃ面白い紹介文きましょうよ。」ってまさきに言われて頑張ったけど、思いつかなかった。</span>
+
+                                              <span OnMouseOver="open('はしゆり')" OnMouseOut="close('はしゆり')">
+                                              はしゆり
+                                              </span>
+                                              <span class="mouseovercomment" ID="はしゆり">いかとぅ</span>
+
+                                              <span OnMouseOver="open('りんだ')" OnMouseOut="close('りんだ')">
+                                              りんだ
+                                              </span>
+                                              <span class="mouseovercomment" ID="りんだ">あめおとこ</span>
+
+                                              <span OnMouseOver="open('せんちゃん')" OnMouseOut="close('せんちゃん')">
+                                              せんちゃん
+                                              </span>
+
+                                              <span class="mouseovercomment" ID="せんちゃん">絶対的崇拝対象（異論は認めない）</span>
+
+                                              <span OnMouseOver="open('さとぴん')" OnMouseOut="close('さとぴん')">
+                                              さとぴん
+                                              </span>
+                                              <span class="mouseovercomment" ID="さとぴん">漂うラスボス臭</span>
+
+
+
+                                              <span OnMouseOver="open('あずっち')" OnMouseOut="close('あずっち')">
+                                              あずっち
+                                              </span>
+                                              <span class="mouseovercomment" ID="あずっち">色気メガネ女子</span>
+
+                                              <span OnMouseOver="open('まみほ')" OnMouseOut="close('まみほ')">
+                                              まみほ
+                                              </span>
+                                              <span class="mouseovercomment" ID="まみほ">ガチャピン可愛くしてみた。</span>
+
+                                              <br>
+
+                                              <span OnMouseOver="open('おかぴ。')" OnMouseOut="close('おかぴ。')">
+                                              おかぴ。
+                                              </span>
+                                              <span class="mouseovercomment" ID="おかぴ。">おかぴまる！</span>
+
+                                              <span OnMouseOver="open('とも')" OnMouseOut="close('とも')">
+                                              とも
+                                              </span>
+                                              <span class="mouseovercomment" ID="とも">キラキラスマイル！</span>
+
+                                              <span OnMouseOver="open('かずき')" OnMouseOut="close('かずき')">
+                                              きどぽ
+                                              </span>
+                                              <span class="mouseovercomment" ID="かずき">エロ修行僧</span>
+
+
+
+                                              <span OnMouseOver="open('ゆきち')" OnMouseOut="close('ゆきち')">
+                                              ゆきち
+                                              </span>
+                                              <span class="mouseovercomment" ID="ゆきち">面白くない関西人</span>
+
+                                              <span OnMouseOver="open('あゆ')" OnMouseOut="close('あゆ')">
+                                              あゆ
+                                              </span>
+                                              <span class="mouseovercomment" ID="あゆ">あゆえってぃ</span>
+
+
+                                              <span OnMouseOver="open('あやか')" OnMouseOut="close('あやか')">
+                                              あやか
+                                              </span>
+
+                                              <span class="mouseovercomment" ID="あやか">踊る医学部生</span>
+
+                                              <span OnMouseOver="open('ひと')" OnMouseOut="close('ひと')">
+                                              ひと
+                                              </span>
+                                              <span class="mouseovercomment" ID="ひと">きゃわわー(∩´∀｀)∩</span>
+
+
+
+                                              <span OnMouseOver="open('きょうこ')" OnMouseOut="close('きょうこ')">
+                                              きょうこ
+                                              </span>
+                                              <span class="mouseovercomment" ID="きょうこ">モデルの人生</span>
+
+                                              <span OnMouseOver="open('せら')" OnMouseOut="close('せら')">
+                                              せら
+                                              </span>
+                                              <span class="mouseovercomment" ID="せら"></span>
+
+                                              <br>
+
+                                              <span OnMouseOver="open('のりぴー')" OnMouseOut="close('のりぴー')">
+                                              のりぴー
+                                              </span>
+                                              <span class="mouseovercomment" ID="のりぴー">ぴかちう</span>
+
+                                              <span OnMouseOver="open('うだはる')" OnMouseOut="close('うだはる')">
+                                              うだはる
+                                              </span>
+                                              <span class="mouseovercomment" ID="うだはる">ゴシップガール</span>
+
+                                              <span OnMouseOver="open('ひだか')" OnMouseOut="close('ひだか')">
+                                              ひだか
+                                              </span>
+                                              <span class="mouseovercomment" ID="ひだか">大地を震わすリズム</span>
+
+
+                                              <span OnMouseOver="open('あーやん')" OnMouseOut="close('あーやん')">
+                                              あーやん
+                                              </span>
+                                              <span class="mouseovercomment" ID="あーやん">長い手足！</span>
+
+
+
+                                              <span OnMouseOver="open('もにお')" OnMouseOut="close('もにお')">
+                                              もにお
+                                              </span>
+                                              <span class="mouseovercomment" ID="もにお">みなぎる闇</span>
+                                              </li>
+
+                                              <li>
+                                                  <h1>13期</h1>
+
+                                                  <img style="width: 560px; height: 420px;"
+                                                  src="photo/member/13.jpg" alt="photo1"><div class="phototext"></div><br>
+
+                                              <span OnMouseOver="open('あらた')" OnMouseOut="close('あらた')">
+                                              部長：あらた
+                                              </span>
+                                              <span class="mouseovercomment" ID="あらた"></span>
+
+                                              <br />
+
+                                              <span OnMouseOver="open('れい')" OnMouseOut="close('れい')">
+                                              副部長：れい
+                                              </span>
+                                              <span class="mouseovercomment" ID="れい"></span>
+
+                                              <br />
+
+                                              <span OnMouseOver="open('かーりー')" OnMouseOut="close('かーりー')">
+                                              かーりー
+                                              </span>
+                                              <span class="mouseovercomment" ID="かーりー"></span>
+
+                                              <span OnMouseOver="open('さくらい')" OnMouseOut="close('さくらい')">
+                                              さくらい
+                                              </span>
+                                              <span class="mouseovercomment" ID="さくらい">わいはさくらいや。</span>
+
+
+                                              <span OnMouseOver="open('かなた')" OnMouseOut="close('かなた')">
+                                              かなた
+                                              </span>
+                                              <span class="mouseovercomment" ID="かなた">たなかかなた</span>
+
+                                              <span OnMouseOver="open('たつき')" OnMouseOut="close('たつき')">
+                                              たつき
+                                              </span>
+                                              <span class="mouseovercomment" ID="たつき">実写版フーディン</span>
+
+
+                                              <span OnMouseOver="open('あつき')" OnMouseOut="close('あつき')">
+                                              あつき
+                                              </span>
+                                              <span class="mouseovercomment" ID="あつき">かわいくないって主張するとこがかわいい</span>
+
+                                              <span OnMouseOver="open('こけ')" OnMouseOut="close('こけ')">
+                                              こけ
+                                              </span>
+                                              <span class="mouseovercomment" ID="こけ"></span>
+
+                                              <span OnMouseOver="open('あや')" OnMouseOut="close('あや')">
+                                              あや
+                                              </span>
+                                              <span class="mouseovercomment" ID="あや"></span>
+
+                                              <span OnMouseOver="open('なつみ')" OnMouseOut="close('なつみ')">
+                                              なつみ
+                                              </span>
+                                              <span class="mouseovercomment" ID="なつみ"></span>
+
+                                              <span OnMouseOver="open('めぐ')" OnMouseOut="close('めぐ')">
+                                              めぐ
+                                              </span>
+                                              <span class="mouseovercomment" ID="めぐ"></span>
+
+                                              <br>
+
+                                              <span OnMouseOver="open('かやえ')" OnMouseOut="close('かやえ')">
+                                              かやえ
+                                              </span>
+                                              <span class="mouseovercomment" ID="かやえ"></span>
+
+                                              <span OnMouseOver="open('むつみ')" OnMouseOut="close('むつみ')">
+                                              むつみ
+                                              </span>
+                                              <span class="mouseovercomment" ID="むつみ"></span>
+
+                                              <span OnMouseOver="open('なお')" OnMouseOut="close('なお')">
+                                              なお
+                                              </span>
+                                              <span class="mouseovercomment" ID="なお">へんたい</span>
+
+                                              <span OnMouseOver="open('ふみか')" OnMouseOut="close('ふみか')">
+                                              ふみか
+                                              </span>
+                                              <span class="mouseovercomment" ID="ふみか"></span>
+
+                                              <span OnMouseOver="open('あやか')" OnMouseOut="close('あやか')">
+                                              あやか
+                                              </span>
+                                              <span class="mouseovercomment" ID="あやか"></span>
+
+                                              <span OnMouseOver="open('まいな')" OnMouseOut="close('まいな')">
+                                              まいな
+                                              </span>
+                                              <span class="mouseovercomment" ID="まいな"></span>
+
+
+                                              <span OnMouseOver="open('かびん')" OnMouseOut="close('かびん')">
+                                              かびん
+                                              </span>
+                                              <span class="mouseovercomment" ID="かびん"></span>
+
+                                              <span OnMouseOver="open('かーや')" OnMouseOut="close('かーや')">
+                                              かーや
+                                              </span>
+                                              <span class="mouseovercomment" ID="かーや">┌（┌＾o＾）┐ﾎﾓｫ…</span>
+
+                                              <span OnMouseOver="open('ゆい')" OnMouseOut="close('ゆい')">
+                                              ゆい
+                                              </span>
+                                              <span class="mouseovercomment" ID="ゆい"></span>
+
+                                              <br>
+
+                                              <span OnMouseOver="open('ぐっち')" OnMouseOut="close('ぐっち')">
+                                              ぐっち
+                                              </span>
+                                              <span class="mouseovercomment" ID="ぐっち"></span>
+
+                                              <span OnMouseOver="open('ゆな')" OnMouseOut="close('ゆな')">
+                                              ゆな
+                                              </span>
+                                              <span class="mouseovercomment" ID="ゆな"></span>
+
+                                              <span OnMouseOver="open('しょこたん')" OnMouseOut="close('しょこたん')">
+                                              しょこたん
+                                              </span>
+                                              <span class="mouseovercomment" ID="しょこたん"></span>
+
+                                              <span OnMouseOver="open('さき')" OnMouseOut="close('さき')">
+                                              さき
+                                              </span>
+                                              <span class="mouseovercomment" ID="さき"></span>
+                                              </li>
+
+                                              <li>
+                                                  <h1>12期</h1>
+
+                                                  <img style="width: 560px; height: 420px;"
+                                                      src="photo/member/12.jpg" alt="photo1"><div class="phototext"></div><br>
+
+                                                  <span OnMouseOver="open('おだひ')" OnMouseOut="close('おだひ')">
+                                                  部長：おだひ
+                                                  </span>
+                                                  <span class="mouseovercomment" ID="おだひ">そばよりもうどんが好き</span>
+
+                                                  <br />
+
+                                                  <span OnMouseOver="open('けーすけ')" OnMouseOut="close('けーすけ')">
+                                                  副部長：けーすけ
+                                                  </span>
+                                                  <span class="mouseovercomment" ID="けーすけ">笑ってるとき真矢みきに全然似てない</span>
+
+                                                  <br />
+
+                                                  <span OnMouseOver="open('ふみな')" OnMouseOut="close('ふみな')">
+                                                  副部長：ふみな
+                                                  </span>
+                                                  <span class="mouseovercomment" ID="ふみな">無駄がらみだいすき</span>
+
+                                                  <br />
+
+                                                  <span OnMouseOver="open('えーご')" OnMouseOut="close('えーご')">
+                                                  えーご
+                                                  </span>
+                                                  <span class="mouseovercomment" ID="えーご">他己紹介のエキスパート</span>
+
+                                                  <span OnMouseOver="open('かみこー')" OnMouseOut="close('かみこー')">
+                                                  かみこー
+                                                  </span>
+                                                  <span class="mouseovercomment" ID="かみこー">普段はイケメン女子</span>
+
+                                                  <span OnMouseOver="open('ちゃそ')" OnMouseOut="close('ちゃそ')">
+                                                  ちゃそ
+                                                  </span>
+                                                  <span class="mouseovercomment" ID="ちゃそ">羊水</span>
+
+                                                  <span OnMouseOver="open('おつ')" OnMouseOut="close('おつ')">
+                                                  おつ
+                                                  </span>
+                                                  <span class="mouseovercomment" ID="おつ">ヘディング要員</span>
+
+                                                  <span OnMouseOver="open('かんべ')" OnMouseOut="close('かんべ')">
+                                                  かんべ
+                                                  </span>
+                                                  <span class="mouseovercomment" ID="かんべ">どぅくし</span>
+
+                                                  <span OnMouseOver="open('まやんず')" OnMouseOut="close('まやんず')">
+                                                  まやんず
+                                                  </span>
+                                                  <span class="mouseovercomment" ID="まやんず">クラップオレゴン</span>
+
+                                                  <span OnMouseOver="open('みき')" OnMouseOut="close('みき')">
+                                                  みき
+                                                  </span>
+                                                  <span class="mouseovercomment" ID="みき">みきちゃんみきちゃんみきちゃん</span>
+
+                                                  <span OnMouseOver="open('まき')" OnMouseOut="close('まき')">
+                                                  まき
+                                                  </span>
+                                                  <span class="mouseovercomment" ID="まき">ただいま！下北に住んでるよ！</span>
+
+                                                  <span OnMouseOver="open('しおり')" OnMouseOut="close('しおり')">
+                                                  しおり
+                                                  </span>
+                                                  <span class="mouseovercomment" ID="しおり">悔しいけどディスれない</span>
+
+                                                  <br>
+
+                                                  <span OnMouseOver="open('きらら')" OnMouseOut="close('きらら')">
+                                                  きらら
+                                                  </span>
+                                                  <span class="mouseovercomment" ID="きらら">押し寄せるタスク</span>
+
+                                                  <span OnMouseOver="open('きまみ')" OnMouseOut="close('きまみ')">
+                                                  きまみ
+                                                  </span>
+                                                  <span class="mouseovercomment" ID="きまみ">Boiledの人</span>
+
+                                                  <span OnMouseOver="open('まゆ')" OnMouseOut="close('まゆ')">
+                                                  まゆ
+                                                  </span>
+                                                  <span class="mouseovercomment" ID="まゆ">女子力の塊</span>
+
+                                                  <span OnMouseOver="open('えりこ')" OnMouseOut="close('えりこ')">
+                                                  えりこ
+                                                  </span>
+                                                  <span class="mouseovercomment" ID="えりこ">女子50m目泳ぎ</span>
+
+                                                  <span OnMouseOver="open('ぴよ')" OnMouseOut="close('ぴよ')">
+                                                  ぴよ
+                                                  </span>
+                                                  <span class="mouseovercomment" ID="ぴよ">才能の四次元ポケットやぁ！</span>
+
+                                                  <span OnMouseOver="open('まなてぃー')" OnMouseOut="close('まなてぃー')">
+                                                  まなてぃー
+                                                  </span>
+                                                  <span class="mouseovercomment" ID="まなてぃー">きらきら☆</span>
+
+                                                  <span OnMouseOver="open('ひとみ')" OnMouseOut="close('ひとみ')">
+                                                  ひとみ
+                                                  </span>
+                                                  <span class="mouseovercomment" ID="ひとみ">ひとみごっこ流行</span>
+
+                                                  <span OnMouseOver="open('ぺぺ')" OnMouseOut="close('ぺぺ')">
+                                                  ぺぺ
+                                                  </span>
+                                                  <span class="mouseovercomment" ID="ぺぺ">アイスさえあれば生きていける</span>
+
+                                                  <span OnMouseOver="open('ありー')" OnMouseOut="close('ありー')">
+                                                  ありー
+                                                  </span>
+                                                  <span class="mouseovercomment" ID="ありー">チータラとラインで生き延びる</span>
+
+                                                  <br>
+
+                                                  <span OnMouseOver="open('ひがしの')" OnMouseOut="close('ひがしの')">
+                                                  ひがしの
+                                                  </span>
+                                                  <span class="mouseovercomment" ID="ひがしの">ひがしの来たの？</span>
+
+
+
+                                                  <span OnMouseOver="open('るりか')" OnMouseOut="close('るりか')">
+                                                  るりか
+                                                  </span>
+                                                  <span class="mouseovercomment" ID="るりか">まだまだ若いです！</span>
+
+                                                  <span OnMouseOver="open('りりこ')" OnMouseOut="close('りりこ')">
+                                                  りりこ
+                                                  </span>
+                                                  <span class="mouseovercomment" ID="りりこ">ワロタンゴ</span>
+
+                                                  <span OnMouseOver="open('まほ')" OnMouseOut="close('まほ')">
+                                                  まほ
+                                                  </span>
+                                                  <span class="mouseovercomment" ID="まほ">ほんわか癒し系</span>
+
+                                                  <span OnMouseOver="open('あーげ')" OnMouseOut="close('あーげ')">
+                                                  あーげ
+                                                  </span>
+                                                  <span class="mouseovercomment" ID="あーげ">三度の飯より四度の飯が好き</span>
+
+                                                  <span OnMouseOver="open('みさき')" OnMouseOut="close('みさき')">
+                                                  みさき
+                                                  </span>
+                                                  <span class="mouseovercomment" ID="みさき">女子力ファイナルフラッシュ</span>
+
+                                                  <span OnMouseOver="open('かんな')" OnMouseOut="close('かんな')">
+                                                  かんな
+                                                  </span>
+                                                  <span class="mouseovercomment" ID="かんな">かんなダヨ☆ウフフ〜☆</span>
+                                              </li>
+
+                                              <li>
+                                                  <h1>11期</h1>
+
+                                                  <span OnMouseOver="open('やまこー')" OnMouseOut="close('やまこー')">
+                                                  部長：やまこー
+                                                  </span>
+                                                  <span class="mouseovercomment" ID="やまこー">ジャズダンス王に、俺はなる！</span>
+
+                                                  <br />
+
+                                                  <span OnMouseOver="open('あさみ')" OnMouseOut="close('あさみ')">
+                                                  副部長：あさみ
+                                                  </span>
+                                                  <span class="mouseovercomment" ID="あさみ">暴走しがちな男子を叱る、FreeDのお母さん的存在♪</span>
+
+                                                  <br />
+
+                                                  <span OnMouseOver="open('あゆむ')" OnMouseOut="close('あゆむ')">
+                                                  あゆむ
+                                                  </span>
+                                                  <span class="mouseovercomment" ID="あゆむ">ぬーん</span>
+
+                                                  <span OnMouseOver="open('かとこー')" OnMouseOut="close('かとこー')">
+                                                  かとこー
+                                                  </span>
+                                                  <span class="mouseovercomment" ID="かとこー">フロア大好き…_(┐「ε:)_ｽﾘｽﾘ</span>
+
+                                                  <span OnMouseOver="open('なんちゃん')" OnMouseOut="close('なんちゃん')">
+                                                  なんちゃん
+                                                  </span>
+                                                  <span class="mouseovercomment" ID="なんちゃん">セミダブル先輩</span>
+
+                                                  <span OnMouseOver="open('たっくん')" OnMouseOut="close('たっくん')">
+                                                  たっくん
+                                                  </span>
+                                                  <span class="mouseovercomment" ID="たっくん">ライフワークは自分探し</span>
+
+                                                  <span OnMouseOver="open('きっころ')" OnMouseOut="close('きっころ')">
+                                                  きっころ
+                                                  </span>
+                                                  <span class="mouseovercomment" ID="きっころ">：P</span>
+
+                                                  <span OnMouseOver="open('しゅんぬ')" OnMouseOut="close('しゅんぬ')">
+                                                  しゅんぬ
+                                                  </span>
+                                                  <span class="mouseovercomment" ID="しゅんぬ">しゅんぬの「ぬ」
+                                                      はパリジェンヌのぬ！</span>
+
+                                                  <span OnMouseOver="open('よいち')" OnMouseOut="close('よいち')">
+                                                  よいち
+                                                  </span>
+                                                  <span class="mouseovercomment" ID="よいち">ストリートの神</span>
+
+                                                  <br>
+
+                                                  <span OnMouseOver="open('ただけー')" OnMouseOut="close('ただけー')">
+                                                  ただけー
+                                                  </span>
+                                                  <span class="mouseovercomment" ID="ただけー">俺に表現できないものはない</span>
+
+
+
+                                                  <span OnMouseOver="open('なんざわ')" OnMouseOut="close('なんざわ')">
+                                                  なんざわ
+                                                  </span>
+                                                  <span class="mouseovercomment" ID="なんざわ">地球が回っている？いや、俺が回っているんだ…</span>
+
+                                                  <span OnMouseOver="open('くーちん')" OnMouseOut="close('くーちん')">
+                                                  くーちん
+                                                  </span>
+                                                  <span class="mouseovercomment" ID="くーちん">コスプレイヤー(♂)</span>
+
+                                                  <span OnMouseOver="open('ありさ')" OnMouseOut="close('ありさ')">
+                                                  ありさ
+                                                  </span>
+                                                  <span class="mouseovercomment" ID="ありさ">みんなの目は私に釘付け♪</span>
+
+                                                  <span OnMouseOver="open('ちゃんぶー')" OnMouseOut="close('ちゃんぶー')">
+                                                  ちゃんぶー
+                                                  </span>
+                                                  <span class="mouseovercomment" ID="ちゃんぶー">FreeDリア充ばっかじゃー！(悲嘆</span>
+
+                                                  <span OnMouseOver="open('ちかこ')" OnMouseOut="close('ちかこ')">
+                                                  ちかこ
+                                                  </span>
+                                                  <span class="mouseovercomment" ID="ちかこ">そう、私がミス•FreeD</span>
+
+                                                  <span OnMouseOver="open('ちゃか')" OnMouseOut="close('ちゃか')">
+                                                  ちゃか
+                                                  </span>
+                                                  <span class="mouseovercomment" ID="ちゃか">恋の悩みはおちゃかさまに相談♪</span>
+
+                                                  <br>
+
+                                                  <span OnMouseOver="open('しーきみ')" OnMouseOut="close('しーきみ')">
+                                                  しーきみ
+                                                  </span>
+                                                  <span class="mouseovercomment" ID="しーきみ">日本女子大の首領(ドン)</span>
+
+                                                  <span OnMouseOver="open('はなよ')" OnMouseOut="close('はなよ')">
+                                                  はなよ
+                                                  </span>
+                                                  <span class="mouseovercomment" ID="はなよ">FreeDの姐さん！(´∀`)</span>
+
+                                                  <span OnMouseOver="open('ひなの')" OnMouseOut="close('ひなの')">
+                                                  ひなの
+                                                  </span>
+                                                  <span class="mouseovercomment" ID="ひなの">Girlsはお任せあり〜♪</span>
+
+                                                  <span OnMouseOver="open('めいしー')" OnMouseOut="close('めいしー')">
+                                                  めいしー
+                                                  </span>
+                                                  <span class="mouseovercomment" ID="めいしー">わたしとカルピスとトトロと</span>
+
+                                                  <span OnMouseOver="open('ゆりか')" OnMouseOut="close('ゆりか')">
+                                                  ゆりか
+                                                  </span>
+                                                  <span class="mouseovercomment" ID="ゆりか">容姿端麗！でも時々…？</span>
+
+                                                  <span OnMouseOver="open('にゃん')" OnMouseOut="close('にゃん')">
+                                                  にゃん
+                                                  </span>
+                                                  <span class="mouseovercomment" ID="にゃん">ヘソ出し衣装の似合う女♪</span>
+
+                                                  <span OnMouseOver="open('みずほ')" OnMouseOut="close('みずほ')">
+                                                  みずほ
+                                                  </span>
+                                                  <span class="mouseovercomment" ID="みずほ">パ<br /><br />　　　ン<br /><br />　　　　　　ゲ<br /><br />　　　　　　　　　ア<br /><br />　　　　　　　　　　　　超<br /><br />　　　　　　　　　　　　　　　大<br /><br />　　　　　　　　　　　　　　　　　　陸</span>
+
+                                                  <span OnMouseOver="open('さっこ')" OnMouseOut="close('さっこ')">
+                                                  さっこ
+                                                  </span>
+                                                  <span class="mouseovercomment" ID="さっこ">FreeDのアイドル☆</span>
+
+                                                  <br>
+
+                                                  <span OnMouseOver="open('きゅうちゃん')" OnMouseOut="close('きゅうちゃん')">
+                                                  きゅうちゃん
+                                                  </span>
+                                                  <span class="mouseovercomment" ID="きゅうちゃん">おおらかおーら</span>
+
+                                                  <span OnMouseOver="open('さえり')" OnMouseOut="close('さえり')">
+                                                  さえり
+                                                  </span>
+                                                  <span class="mouseovercomment" ID="さえり">Friday Night★</span>
+
+                                                  <span OnMouseOver="open('まお')" OnMouseOut="close('まお')">
+                                                  まお
+                                                  </span>
+                                                  <span class="mouseovercomment" ID="まお">ballockin'</span>
+
+                                                  <span OnMouseOver="open('こはる')" OnMouseOut="close('こはる')">
+                                                  こはる
+                                                  </span>
+                                                  <span class="mouseovercomment" ID="こはる">こはるんるん♪</span>
+
+                                                  <span OnMouseOver="open('けいちゃん')" OnMouseOut="close('けいちゃん')">
+                                                  けいちゃん
+                                                  </span>
+                                                  <span class="mouseovercomment" ID="けいちゃん">ちゃんづけの方が長くなる</span>
+                                              </li>
+
+                                              <li>
+                                                  <h1>10期</h1>
+
+                                                  <img style="width: 560px; height: 420px;"
+                                                      src="photo/member/10.jpg" alt="photo1"><div class="phototext"></div><br>
+
+                                                  部長：むら<br>
+                                                  副部長：たろー<br />
+                                                  副部長：あかり<br />
+                                                  ひろ いなお こーち おーたに たけし たいら うっち〜 わち りな はるか かなえ こにー まなみ まりな まゆみ おがしょー りさこ ゆり ちえり
+                                              </li>
+
+                                              <li>
+                                                  <h1>9期</h1>
+
+                                                  部長：やなぎぃ<br />
+                                                  副部長：こも<br />
+                                                  いーじー じょーじ まこと けーし まさやん まさき かっちゃん<br>
+                                                  のん ももこ ゆうか ゆり えりな シャウイン あみこ ありさ ちえ すさまり ずはー なつこ まい ようこ よしこ<br />
+                                              </li>
+
+                                              <li>
+                                                  <h1>8期</h1>
+
+                                                  部長：りっきー<br />
+
+                                                  <span OnMouseOver="open('こむ')" OnMouseOut="close('こむ')">
+                                                  副部長：こむ
+                                                  </span>
+                                                  <span class="mouseovercomment" ID="こむ">お父さん！</span>
+                                                  <br />
+                                                  かみ いと さおり しんたろー すーちゃん たいざん ちあき のり ハチ めぐ やす りえ あき リナ<br />
+                                              </li>
+
+                                              <li>
+                                                  <h1>7期</h1>
+                                                  部長：はるか<br />
+                                                  副部長：ふっきー<br />
+                                                  こっしー はんな 寺P ゆうり りんだ<br />
+                                              </li>
+
+                                              <li>
+                                                  <h1>6期</h1>
+
+                                                  部長：たかお<br />
+                                                  副部長：たむたむ<br />
+                                                  えりか ちなしょー みぎわ ゆに<br />
+
+                                              </li>
+
+                                              <li>
+                                                  <h1>5期</h1>
+
+                                                  部長：かずき<br />
+                                                  副部長：ひとみん<br />
+                                                  のんちゃん いのっち みさ ゆーこ ゆーたろー<br />
+                                              </li>
+
+                            </ul>
+-->
+                    </div>
+                </div>
+            </div>
+
+            <footer>
+                    <small>Copyright © Tokyo University Jazz Dance Club FreeD. All rights reserved.</small>
+            </footer>
+        </div>
+    </body>
+</html>
