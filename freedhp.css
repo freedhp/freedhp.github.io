@@ -226,6 +226,12 @@ img {
 	line-height:120%;
 }
 
+.latest_movie li{
+	list-style-type: none;
+	border-bottom:1px dashed #66b9bf;
+	padding-bottom:20px;
+}
+
 .photos{
 	font-family:"ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
 
