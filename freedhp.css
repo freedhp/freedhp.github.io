@@ -298,6 +298,7 @@ footer{
     height: 0;
     overflow: hidden;
     opacity: 0;
+    word-break: break-all;
 }
 #content_19th, #content_20th{
     word-break: keep-all;
