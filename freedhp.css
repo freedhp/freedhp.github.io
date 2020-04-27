@@ -11,6 +11,7 @@ body{
     color : #4b4b4b;
     background-color: #ffeee6;
     font-size:15px;
+    font-family:  "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
 }
 
 a{/*リンクされた文字*/
@@ -50,6 +51,12 @@ h1{
     font-size:20px;
     font-style:normal;
     line-height: 100%;
+}
+
+h2{
+    font-size:18px;
+    font-style:normal;
+    line-height:100%;
 }
 
 /*水平線（点線）*/
@@ -504,6 +511,7 @@ summary.title{
         margin:0px 0px;
         padding: 12px;
         text-align: center;
+        font-size:18px;
     }
 
     #nav-drawer {
