@@ -1,22 +1,78 @@
 @charset "UTF-8";
 
+/*padding,borderを含めたサイズで計算*/
 *{
     box-sizing:border-box
 }
 
-.contentscenter {
-	position: relative;
-	height: 100%;
-	min-height:1px;
-	width: 1000px;
-	margin: 0 auto;
+body{
+    width : 100%;
+    margin: 0;
+    color : #4b4b4b;
+    background-color: #ffeee6;
+    font-size:15px;
 }
 
-.contentslogo {
-	position: absolute;
-	left: 0px;
-	top: 20px;
-	border-style:none;
+a{/*リンクされた文字*/
+    color:#07889b;
+    font-style:normal;
+    text-decoration:none;
+}
+a:link {/*未訪問のリンク*/
+    color:#07889b;
+    font-style:normal;
+    text-decoration:none;
+}
+a:visited {/*訪問後のリンク*/
+    color:#07889b;
+    text-decoration:none;
+}
+a:hover {/*マウスをのせたとき*/
+    color:#66b9bf;
+    font-style:normal;
+    text-decoration:none;
+}
+a:active {/*クリック中*/
+    text-decoration:none;
+}
+
+h1{
+    font-size:20px;
+    font-style:normal;
+    line-height: 100%;
+}
+
+/*水平線（点線）*/
+hr {
+    width: 100%;
+    height: 1px;
+    border: 0;
+    border-top: 1px dashed #66b9bf;
+}
+
+/*title画像のしたの水平線（斜線）*/
+hr.hr_title{
+    height: 10px;
+    opacity: 60%;
+    background: -webkit-repeating-linear-gradient(-45deg, #07889b, #07889b 4px,#66b9bf 4px, #66b9bf 8px);
+    background: repeating-linear-gradient(-45deg, #07889b, #07889b 4px, #66b9bf 4px, #66b9bf 8px);
+    border: none;
+    position: relative;
+    top: -5px;
+    width: inherit;
+    border-radius: 10px;
+}
+
+ul {
+    list-style-type: none;
+    padding-left:0px;
+}
+
+img {
+    border: none;
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
 }
 
 .titleimage img{
@@ -26,44 +82,13 @@
     user-select: none; /* CSS3 */
     -moz-user-select: none; /* Firefox */
     -webkit-user-select: none; /* Safari、Chromeなど */
-    -ms-user-select: none; /* IE10かららしい */
+    -ms-user-select: none; /* IE10から */ 
     pointer-events: none;
 }
 
 .titleimage{
     width: auto;
     display: inline-block;
-}
-
-
-.contents {
-	background-image: url(images/contents/back.png);
-	background-repeat: no-repeat;
-	background-position: center top;
-	margin:0px;
-	background-size:2000px 1260px;
-	min-width:1000px;
-}
-
-
-.bodyparts {
-	position: relative;
-	height: 637px;
-	width: 1000px;
-	margin: 0 auto;
-}
-.bodyimage {
-	position: absolute;
-	left: 0px;
-    top: 60
-    0px;
-}
-
-body{
-    width : 100%;
-    margin: 0;
-    color : #4b4b4b;
-    background-color: #ffeee6;
 }
 
 .main {
@@ -84,7 +109,7 @@ body{
     user-select: none; /* CSS3 */
     -moz-user-select: none; /* Firefox */
     -webkit-user-select: none; /* Safari、Chromeなど */
-    -ms-user-select: none; /* IE10かららしい */
+    -ms-user-select: none; /* IE10から */ 
     pointer-events: none;
 }
 
@@ -130,33 +155,16 @@ body{
     overflow: hidden;
 }
 
-.topvideo {
-	margin: 0px auto;
-	padding: 0px;
-	height: auto;
-	min-height: 1px;
-	position:absolute;
-	width: 560px;
-	position: inherit;
-}
-
-
-.date {
-	font-family:  "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
-	font-size: 20px;
-	font-style: normal;
-	line-height:100%;
-}
-/*.text {
+.text {
 	font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
-	font-size: 20px;
+	font-size: 15px;
 	font-style: normal;
 	padding-left: 0em;
     line-height: 120%;
 	position: inherit;
     float: left;
     width: 100%;
-}*/
+}
 .phototext {
 	font-family:  "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
 	font-size: 15px;
@@ -167,226 +175,6 @@ body{
 
 }
 
-＃content＿top, ＃content＿movie {
-  word-break:break-all;
-}
-
-
-.line {
-  float:right;
-}
-
-
-.clearfix {
-	width:100%;
-}
-.clearfix:after{
-    content: "";
-    display: block;
-    clear: both;
-}
-
-.contentsmenuabout {
-	position: absolute;
-	left: 20px;
-	top: 170px;
-}
-a#contentsmenuabout {
-	display: block;
-    width: 65px; /* 画像1枚分の横幅 */
-    height: 75px; /* 画像1枚分の高さ */
-    text-indent: -1000px; /* 文字を見えなくする */
-    background-image: url("images/contents/contentsmenuabout.png"); /* 画像ファイル名 */
-}
-a#contentsmenuabout:hover {
-    background-position: top right; /* 背景画像の表示開始基準を右上に変更 */
-}
-.contentsmenumember {
-	position: absolute;
-	left: 105px;
-	top: 170px;
-}
-a#contentsmenumember {
-	display: block;
-    width: 75px; /* 画像1枚分の横幅 */
-    height: 75px; /* 画像1枚分の高さ */
-    text-indent: -1000px; /* 文字を見えなくする */
-    background-image: url("images/contents/contentsmenumember.png"); /* 画像ファイル名 */
-}
-a#contentsmenumember:hover {
-    background-position: top right; /* 背景画像の表示開始基準を右上に変更 */
-}
-.contentsmenustage {
-	position: absolute;
-	left: 60px;
-	top: 275px;
-}
-a#contentsmenustage {
-	display: block;
-    width: 65px; /* 画像1枚分の横幅 */
-    height: 75px; /* 画像1枚分の高さ */
-    text-indent: -1000px; /* 文字を見えなくする */
-    background-image: url("images/contents/contentsmenustage.png"); /* 画像ファイル名 */
-}
-a#contentsmenustage:hover {
-    background-position: top right; /* 背景画像の表示開始基準を右上に変更 */
-}
-.contentsmenuphotomovie {
-	position: absolute;
-	left: 135px;
-	top: 275px;
-}
-a#contentsmenuphotomovie {
-	display: block;
-    width: 110px; /* 画像1枚分の横幅 */
-    height: 75px; /* 画像1枚分の高さ */
-    text-indent: -1000px; /* 文字を見えなくする */
-    background-image: url("images/contents/contentsmenuphotomovie.png"); /* 画像ファイル名 */
-}
-a#contentsmenuphotomovie:hover {
-    background-position: top right; /* 背景画像の表示開始基準を右上に変更 */
-}
-.contentsmenufb {
-	position: absolute;
-	left: 10px;
-	top: 380px;
-}
-a#contentsmenufb {
-	display: block;
-    width: 85px; /* 画像1枚分の横幅 */
-    height: 75px; /* 画像1枚分の高さ */
-    text-indent: -1000px; /* 文字を見えなくする */
-    background-image: url("images/contents/contentsmenufb.png"); /* 画像ファイル名 */
-}
-a#contentsmenufb:hover {
-    background-position: top right; /* 背景画像の表示開始基準を右上に変更 */
-}
-.contentsmenumail {
-	position: absolute;
-	left: 110px;
-	top: 380px;
-}
-a#contentsmenumail {
-	display: block;
-    width: 65px; /* 画像1枚分の横幅 */
-    height: 75px; /* 画像1枚分の高さ */
-    text-indent: -1000px; /* 文字を見えなくする */
-    background-image: url("images/contents/contentsmenumail.png"); /* 画像ファイル名 */
-}
-a#contentsmenumail:hover {
-    background-position: top right; /* 背景画像の表示開始基準を右上に変更 */
-}
-.contentsmenublog {
-	position: absolute;
-	left: 65px;
-	top: 490px;
-}
-a#contentsmenublog {
-	display: block;
-    width: 65px; /* 画像1枚分の横幅 */
-    height: 75px; /* 画像1枚分の高さ */
-    text-indent: -1000px; /* 文字を見えなくする */
-    background-image: url("images/contents/contentsmenublog.png"); /* 画像ファイル名 */
-}
-a#contentsmenublog:hover {
-    background-position: top right; /* 背景画像の表示開始基準を右上に変更 */
-}
-.contentsmenulogin {
-	position: absolute;
-	left: 160px;
-	top: 490px;
-}
-a#contentsmenulogin {
-	display: block;
-    width: 55px; /* 画像1枚分の横幅 */
-    height: 75px; /* 画像1枚分の高さ */
-    text-indent: -1000px; /* 文字を見えなくする */
-    background-image: url("images/contents/contentsmenulogin.png"); /* 画像ファイル名 */
-}
-a#contentsmenulogin:hover {
-    background-position: top right; /* 背景画像の表示開始基準を右上に変更 */
-}
-.contentsmenu {
-	float:left;
-	/*position: fixed;*//*gpFloatで代用*/
-	top: 0px;
-	left: auto;
-	width:250px;
-	height:620px;
-	margin:0px;
-	padding:0px;
-}
-
-.contentstitle {
-	position: absolute;
-	left: 1px;
-	top: 100px;
-}
-.contentsbox {
-	float: right;
-	width: 80%;
-	height: auto;
-	min-height:430px;
-	margin: 10px auto;
-	padding:0px;
-
-}
-
-.memberlist {
-	font-family:  "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
-	font-size: 20px;
-	font-style: normal;
-	line-height:140%;
-}
-
-.memberlist li{
-	list-style-type: none;
-	border-bottom:1px dashed black;
-	padding-bottom:20px;
-}
-
-.memberlist h1{
-	font-size:25px;
-	font-style:normal;
-	line-height:100%;
-}
-
-.memberlist p{
-	font-size:20px;
-	font-style:normal;
-	line-height:120%;
-}
-
-a{/*リンクされた文字*/
-    color:#07889b;
-    font-style:normal;
-    text-decoration:none;
-}
-a:link {/*未訪問のリンク*/
-    color:#07889b;
-    font-style:normal;
-    text-decoration:none;
-}
-a:visited {/*訪問後のリンク*/
-    color:#07889b;
-    text-decoration:none;
-}
-a:hover {/*マウスをのせたとき*/
-    color:#66b9bf;
-    font-style:normal;
-    text-decoration:none;
-}
-a:active {/*クリック中*/
-    text-decoration:none;
-}
-
-.indent1em {
-	padding-left:1em;
-}
-
-.indent0em {
-	text-indent:2em;
-}
 
 .mouseovercomment{
 	z-index:3;
@@ -399,21 +187,6 @@ a:active {/*クリック中*/
 	margin-left:-5em;
 	padding: 0em 0.5em;
 	text-indent:0em;
-	}
-
-.mouseplease{
-	text-decoration:underline;
-}
-
-.eventphoto{
-	background-color:#ffffff;
-	border-radius: 30px;
-	padding: 15px 15px;
-	margin:10px 10px;
-	text-indent:0em;
-	position:absolute;
-	top: 330px;
-	left: 300px;
 }
 
 .close{
@@ -431,21 +204,14 @@ a:active {/*クリック中*/
 	border-bottom:1px dashed #66b9bf;
 }
 
-.stages h1{
-	font-size:25px;
-	font-style:normal;
-	line-height:100%;
-}
-
 .stages p{
-	font-size:20px;
+	font-size:15px;
 	font-style:normal;
 	line-height:100%;
 }
 
 .genres{
 	font-family:"ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
-
 }
 
 .genres li{
@@ -454,21 +220,10 @@ a:active {/*クリック中*/
 	padding-bottom:20px;
 }
 
-.genres h1{
-	font-size:25px;
-	font-style:normal;
-	line-height:100%;
-}
-
 .genres p{
-	font-size:20px;
+	font-size:15px;
 	font-style:normal;
 	line-height:120%;
-}
-
-.genres video{
-  width:560px;
-  height:315px;
 }
 
 .photos{
@@ -482,21 +237,14 @@ a:active {/*クリック中*/
 	padding-bottom:20px;
 }
 
-.photos h1{
-	font-size:25px;
-	font-style:normal;
-	line-height:100%;
-}
-
 .photos p{
-	font-size:20px;
+	font-size:15px;
 	font-style:normal;
 	line-height:120%;
 }
 
-
 .eventtable td{
-	border:1px solid black;
+	border:1px solid #4b4b4b;
 	text-align: center;
 
 }
@@ -509,31 +257,21 @@ a:active {/*クリック中*/
 	font-weight: bold;
 }
 
-hr {
-    width: 100%;
-    height: 1px;
-    border: 0;
-    border-top: 1px dashed #66b9bf;
-}
-
-ul {list-style-type: none;}
-img {border: none;max-width: 100%;height: auto;vertical-align: middle;}
-
 header {
 	position: fixed;	/*固定表示*/
-	left: 0px;top: 0px;
-	z-index: 2;
+    left: 0px;
+    top: 0px;
+	z-index: 99;
 	width: 100%;		/*幅*/
 	height: 80px;		/*高さ*/
 	background:rgba(255,255,255,0.8);	/*背景色*/
-	/*box-shadow: 0px 0px 30px 30px rgba(255,255,255,0.6);*/
 }
 
 header #logo img {
 	width: 190px;	/*画像の幅*/
 	position: absolute;
 	left: 3%;		/*ヘッダーブロックに対して左から3%の場所に配置*/
-	bottom: 0px;	/*ヘッダーブロックに対して下から10pxの場所に配置*/
+	bottom: 0px;	/*ヘッダーブロックに対して下から0pxの場所に配置*/
 }
 
 header .icon {
@@ -555,7 +293,7 @@ header .icon img {
     overflow: hidden;
     clear: both;
 	position: absolute;
-	left: 190px;	/*ヘッダーブロックに対して左から300pxの場所に配置*/
+	left: calc(3% + 190px);	/*ヘッダーブロックに対して左から300pxの場所に配置*/
     bottom: 10px;	/*ヘッダーブロックに対して下から10pxの場所に配置*/
     height: 60px;
 }
@@ -572,11 +310,9 @@ header .icon img {
     padding-top: 3px;	/*下のブロックの「border-bottom」と「bottom」の数字と合わせる。*/
     color: #4b4b4b;
 }
-
 #menubar li a:hover{
     color : #e37222;
 }
-
 
 /*下線のアニメーション設定*/
 #menubar li::after {
@@ -593,47 +329,31 @@ header .icon img {
     bottom: 0px;
 }
 
-/*スマホ用メニューを表示させない*/
-#menubar-s {display: none;}
-/*３本バーアイコンを表示させない*/
-#menubar_hdr {display: none;}
-
+/*menubarの間の縦線*/
 #menubar li {
     border-left: 1px solid #bbb;
     border-right: 1px solid #bbb;
   }
-
 #menubar li+ li {
     border-left: 0;
     border-right: 1px solid #bbb;
   }
 
-.hr_title{
-    height: 10px;
-    opacity: 60%;
-    background: -webkit-repeating-linear-gradient(-45deg, #07889b, #07889b 4px,#66b9bf 4px, #66b9bf 8px);
-    background: repeating-linear-gradient(-45deg, #07889b, #07889b 4px, #66b9bf 4px, #66b9bf 8px);
-    border: none;
-    position: relative;
-    top: -5px;
-    width: inherit;
-    border-radius: 10px;
-}
-
+/*タブの設定*/
 .tab-wrap {
     display: flex;
     flex-wrap: wrap;
     margin:20px 0;
   }
-  .tab-wrap:after {
+.tab-wrap:after {
     content: '';
     width: 100%;
     height: 3px;
     background: #07889b;
     display: block;
     order: -1;
-  }
-  .tab-label {
+}
+.tab-label {
     color: White;
     background: LightGray;
     white-space: nowrap;
@@ -645,8 +365,8 @@ header .icon img {
     cursor: pointer;
     border-radius: 5px 5px 0 0;
     flex: 1;
-  }
-  .tab-label:not(:last-of-type) {
+}
+.tab-label:not(:last-of-type) {
     margin-right: 5px;
   }
   .tab-content {
@@ -654,6 +374,11 @@ header .icon img {
     height: 0;
     overflow: hidden;
     opacity: 0;
+    word-break: keep-all;
+  }
+
+  #content_top, #content_movie{
+    word-break: break-all;
   }
   /* アクティブなタブ */
   .tab-switch:checked+.tab-label {
@@ -672,32 +397,32 @@ header .icon img {
     display: none;
   }
 
+/*左端を合わせる*/
 .date_indent{
     display: inline-block;
     width:3em;
 }
-
 .sns_indent{
     display: inline-block;
     width:6em;
 }
 
-.tab-content{
-    word-break: keep-all;
-}
-
+/*詳細等のボタンリンク色に*/
 summary{
     color: #07889b;
     outline: none;
 }
+
 summary:hover{
     color: #66b9bf;
 }
 
+/*写真のイベント名を大きく*/
 summary.title{
     font-size: 120%;
 }
 
+/*eventの詳細をインデント*/
 .detail{
     margin-left:2em;
     margin-top:1em;
@@ -709,6 +434,200 @@ footer{
     padding : 0px;
     clear : both;
     width : 100%;
-    position: absolute;/*←絶対位置*/
+    position: absolute;/*絶対位置*/
     bottom: 0; /*下に固定*/
 }
+
+/*ハンバーガーメニューを非表示*/
+#nav-drawer{
+    display:none;
+}
+
+@media screen and (max-width:1023px){
+    /*twiterタイムラインを非表示*/
+    .tweetbox{
+        display:none;
+    }
+
+    /*boxの横幅を100%に*/
+    .box{
+        width:100%;
+    }
+
+    #nav-content ul{
+        margin-top:80px;
+        padding: 10px;
+        height:auto;
+    }
+
+    #nav-content li{
+        margin:0px 0px;
+        padding: 12px;
+        text-align: center;
+    }
+
+    #nav-drawer {
+        position: relative;
+        display:block;
+      }
+      
+      /*チェックボックスは非表示に*/
+      .nav-unshown {
+        display:none;
+      }
+      
+      /*アイコンのスペース*/
+      #nav-open {
+        display: inline-block;
+        width: 25px;
+        height: 25px;
+        vertical-align: middle;
+        position: absolute;
+        right:10px;
+      }
+      
+      /*ハンバーガーアイコンをCSSだけで表現*/
+      #nav-open span, #nav-open span:before, #nav-open span:after {
+        position: absolute;
+        height: 3px;/*線の太さ*/
+        width: 25px;/*長さ*/
+        border-radius: 3px;
+        background: #4b4b4b;
+        display: block;
+        content: '';
+        cursor: pointer;
+        z-index: 300; /*メニュー開いても表示されるように*/
+      }
+
+      #nav-open span:before {
+        right:0px;
+        bottom: -9px;
+      }
+      #nav-open span:after {
+        right: 0px;
+        bottom: -18px;
+      }
+      
+      /*閉じる用の薄黒カバー*/
+      #nav-close {
+        display: none;/*はじめは隠しておく*/
+        position: fixed;
+        z-index: 10;
+        top: 0;/*全体に広がるように*/
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: black;
+        opacity: 0;
+        transition: all .3s;
+      }
+      
+      /*中身*/
+      #nav-content {
+        overflow: auto;
+        position: fixed;
+        top: 0px;
+        right: 0;
+        z-index: 100;/*カバー背景より最前面に*/
+        width: 90%;/*左側に隙間を作る（閉じるカバーを表示）*/
+        max-width: 330px;/*最大幅*/
+        height: 100%;
+        background:	rgba(255,255,255,0.8);/*背景色*/
+        transition: .3s ease-in-out;/*滑らかに表示*/
+        -webkit-transform: translateX(-105%);
+        transform: translateX(100%);/*右に隠しておく*/
+      }
+      
+      /*チェックが入ったら表示*/
+      #nav-input:checked ~ #nav-close {
+        display: block;/*カバーを表示*/
+        opacity: .5;
+      }
+      
+      #nav-input:checked ~ #nav-content {
+        -webkit-transform: translateX(0%);
+        transform: translateX(0%);/*中身を表示（右へスライド）*/
+        box-shadow: 6px 0 25px rgba(0,0,0,.15);
+      }
+      
+    /*横並びメニューを非表示*/
+      #menubar{
+          display:none;
+      }
+
+    /*アイコン画像の調整*/
+    header .icon {
+        width: auro;
+        position: absolute;
+        right: 60px; /*ハンバーガーメニューの左に表示*/
+        bottom: 10px;
+    }
+    header .icon img {
+        width: 20px; /*アイコン画像小さく*/
+        margin-left: 0px; /*アイコンの間空けない*/
+    }
+
+    /*Freedのロゴ画像調整*/
+    header #logo img {
+        width: 150px;
+        position: absolute;
+        left: 0px;
+        bottom: 10px;
+    }
+
+    .topimage {
+        width : 100%;
+    }
+    
+    .topimage img{
+        border-radius: 0px;
+    }
+
+    /*ボックスの幅100%に*/
+    .boxes{
+        width:100%;
+    }
+
+    /*ボックスの角丸くしない(幅100%にしたのに対応)*/
+    .box, .contentbox{
+        border-radius: 0;
+    }
+
+    /*title画像小さく*/
+    .titleimage img{
+        height:30px;
+    }
+
+    /*footerの文字小さく*/
+    footer{
+        font-size:10px;
+    }
+}
+
+/*写真ページの2カラムを1カラムに変更*/
+@media only screen and (max-width:700px){
+    .photos table{ 
+        margin: 0 -10px; 
+    }
+    .photos table th, .photos table td{
+    width: 100%;
+    display: block;
+    border-top: none;
+    }
+}
+
+/*youtubeの動画サイズをアスペクト比保ったまま縮小*/
+@media screen and (max-width: 560px) {
+    .iframe-responsive {
+      position: relative;
+      width: 100%;
+      padding: calc(315 / 560 * 100%) 0 0;
+    }
+    .iframe-responsive iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+  }
